@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "6f371e14-702b-4538-b6d1-1ad007113f62",
+  "name": "firdgeSwap",
+  "symbol": "bg_firdgeswap",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "firdgeSwap.png",
+  "tileColors": ""
+}

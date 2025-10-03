@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "b466317e-d93d-48d1-b059-1a5b7df2400a",
+  "name": "fridgeSwap",
+  "symbol": "bg_fridgeswap",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "fridgeSwap.png",
+  "tileColors": ""
+}

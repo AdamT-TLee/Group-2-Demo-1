@@ -1,11 +1,11 @@
 {
   "_resourceType": "background",
-  "id": "2759095f-7baa-49d8-ab78-f0ee84d37504",
+  "id": "6a1ce8eb-2f31-4ed9-8476-0b0edaa6a7d6",
   "name": "newFiridge (1)",
   "symbol": "bg_newfiridge_1_",
-  "width": 20,
+  "width": 40,
   "height": 18,
-  "imageWidth": 160,
+  "imageWidth": 320,
   "imageHeight": 144,
   "filename": "newFiridge (1).png",
   "tileColors": ""
