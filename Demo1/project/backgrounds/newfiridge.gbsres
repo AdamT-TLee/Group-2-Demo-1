@@ -2,12 +2,11 @@
   "_resourceType": "background",
   "id": "0e9416aa-eec0-421a-a7c7-54c6ac7d2319",
   "name": "newFiridge",
-  "symbol": "sprite_newfiridge",
+  "symbol": "bg_newfiridge",
   "width": 32,
   "height": 32,
   "imageWidth": 256,
   "imageHeight": 256,
   "filename": "newFiridge.png",
-  "tileColors": "",
-  "autoColor": false
+  "tileColors": ""
 }
