@@ -7,14 +7,14 @@
       "symbol": "var_highlightcol"
     },
     {
-      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
-      "name": "Varaible 1",
-      "symbol": "var_varaible_0"
-    },
-    {
       "id": "1",
       "name": "HighlightRow",
       "symbol": "var_highlightrow"
+    },
+    {
+      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
+      "name": "Varaible 1",
+      "symbol": "var_varaible_0"
     }
   ]
 }

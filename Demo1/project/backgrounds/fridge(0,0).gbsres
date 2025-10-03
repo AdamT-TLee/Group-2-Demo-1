@@ -3,23 +3,11 @@
   "id": "9338db21-ef0d-4fb2-bc89-f0c2510289e7",
   "name": "fridge(0,0)",
   "symbol": "sprite_fridge_0_0_",
-  "numFrames": 10,
-  "filename": "fridge(0,0).png",
-  "checksum": "5549a43e4215c959d83d4180b43f195cfa546cf7",
   "width": 20,
   "height": 18,
-  "states": [
-    "72aa3de0-98be-4e77-a099-8b8cd3af74d2"
-  ],
-  "numTiles": 0,
-  "canvasWidth": 32,
-  "canvasHeight": 32,
-  "boundsX": 0,
-  "boundsY": 0,
-  "boundsWidth": 16,
-  "boundsHeight": 16,
-  "animSpeed": 15,
   "imageWidth": 160,
   "imageHeight": 144,
-  "tileColors": ""
+  "filename": "fridge(0,0).png",
+  "tileColors": "",
+  "autoColor": false
 }
