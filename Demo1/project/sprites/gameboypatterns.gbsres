@@ -1,0 +1,101 @@
+{
+  "_resourceType": "sprite",
+  "id": "c7b37861-88c4-4a39-ad2f-d1ad35a0bc77",
+  "name": "gameboyPatterns",
+  "symbol": "sprite_gameboy_backgrounds_",
+  "numFrames": 141.75,
+  "filename": "gameboyPatterns.png",
+  "checksum": "b131b05c4712990dc459baa5bf335fc5880e9a87",
+  "width": 2268,
+  "height": 4492,
+  "states": [
+    {
+      "id": "c6f75515-19c7-4fcc-8b40-a6c7bcf1d99c",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "a721e0f0-2e65-480e-92ec-8628bef39020",
+          "frames": [
+            {
+              "id": "1c724889-64e2-4079-99fb-65dc4691f689",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "56e253c3-4601-42e6-bc34-184c57849376",
+          "frames": [
+            {
+              "id": "ec62466d-68e1-4a1e-8b72-67da16fcfda4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "032918ba-ffa2-481c-a0df-44fb36455744",
+          "frames": [
+            {
+              "id": "25b782a7-28f1-4bba-a791-216f7bb98017",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fecad5d0-b02d-4051-96c7-e5dc9364c73c",
+          "frames": [
+            {
+              "id": "9b72f8fd-894b-4240-8c49-7eb1900ff45d",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "467ac4c0-b4c9-47c0-87fe-35369e7bbeef",
+          "frames": [
+            {
+              "id": "3c83b164-c067-4b52-b8f1-4825b4d47f38",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "dd58c91f-c0c6-4315-ae63-f72e40982c9c",
+          "frames": [
+            {
+              "id": "d66b458f-d1c2-454c-84c7-34be58928532",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "81e3cfd1-835f-431e-b5d7-9a2a12815869",
+          "frames": [
+            {
+              "id": "b78df13c-b013-41d3-adcd-f402bfb4f6de",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e327716e-8b24-488f-a53b-6a535542604c",
+          "frames": [
+            {
+              "id": "501113b0-546e-481b-acda-d1430dca20be",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15
+}

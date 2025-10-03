@@ -1,0 +1,25 @@
+{
+  "_resourceType": "background",
+  "id": "91392b67-45d3-4f20-b968-d89adffc9aaa",
+  "name": "newFiridge",
+  "symbol": "sprite_newfiridge",
+  "numFrames": 16,
+  "filename": "newFiridge.png",
+  "checksum": "a58ace495a3373806daada496822c21f330fc6cb",
+  "width": 32,
+  "height": 32,
+  "states": [
+    "bcc99fdc-1a04-4b94-a17a-0f11be69b06b"
+  ],
+  "numTiles": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "imageWidth": 256,
+  "imageHeight": 256,
+  "tileColors": ""
+}
