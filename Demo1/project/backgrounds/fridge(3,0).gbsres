@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d1b9096c-2636-4a28-a5aa-52f2e17485b7",
+  "name": "fridge(3,0)",
+  "symbol": "bg_fridge_3_0_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "fridge(3,0).png",
+  "tileColors": ""
+}
