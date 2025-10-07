@@ -1,0 +1,58 @@
+{
+  "_resourceType": "script",
+  "id": "f8aa5651-2e9f-45a0-98b7-8ec4b4ef8454",
+  "name": "Place",
+  "description": "",
+  "variables": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Selector"
+    },
+    "1": {
+      "id": "1",
+      "name": "Slot"
+    }
+  },
+  "symbol": "script_2",
+  "script": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "1",
+        "x": {
+          "type": "property",
+          "target": "0",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "sub",
+          "valueA": {
+            "type": "property",
+            "target": "0",
+            "property": "ypos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "1",
+              "__collapse": false
+            },
+            "id": "f2554649-f15a-44e3-9725-808936d40c62"
+          }
+        ],
+        "false": []
+      },
+      "id": "5f1f919e-22fa-4a33-91e3-71d065c0b1fe"
+    }
+  ]
+}
