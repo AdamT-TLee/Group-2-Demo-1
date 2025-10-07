@@ -1,0 +1,10 @@
+{
+  "_resourceType": "script",
+  "id": "1b20327a-f33a-4064-a347-784ce90d1be6",
+  "name": "MoveCamSmooth",
+  "description": "simple script to move camera smoothley",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_1",
+  "script": []
+}

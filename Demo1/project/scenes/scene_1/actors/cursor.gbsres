@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7",
-  "name": "",
+  "name": "Cursor",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "6f33c7ee-529c-4e5c-af9a-2e1d3a3dfb26",
@@ -58,7 +58,8 @@
           "up"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -119,7 +120,8 @@
           "down"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -179,7 +181,8 @@
           "right"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -239,7 +242,8 @@
           "left"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -300,7 +304,8 @@
           "b"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -340,8 +345,8 @@
                       "type": "number",
                       "value": 0
                     },
-                    "speed": 0,
-                    "__collapse": true
+                    "speed": 4,
+                    "__collapse": false
                   },
                   "id": "253a7fb6-f00c-4dc6-81d7-1d3e54090d56"
                 },
@@ -375,7 +380,7 @@
                       "type": "number",
                       "value": 0
                     },
-                    "speed": 0
+                    "speed": 4
                   },
                   "id": "9e28e8a7-b476-48aa-92d0-606419d306db"
                 },

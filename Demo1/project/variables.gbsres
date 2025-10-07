@@ -20,6 +20,26 @@
       "id": "2",
       "name": "AtFridge",
       "symbol": "var_atfridge"
+    },
+    {
+      "id": "3",
+      "name": "TIMER",
+      "symbol": "var_timer"
+    },
+    {
+      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L0",
+      "name": "MINUTES",
+      "symbol": "var_minutes"
+    },
+    {
+      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L1",
+      "name": "SECONDS",
+      "symbol": "var_seconds"
+    },
+    {
+      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L2",
+      "name": "INTERVAL",
+      "symbol": "var_interval"
     }
   ]
 }

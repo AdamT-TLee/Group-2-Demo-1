@@ -22,6 +22,17 @@
         "actorId": "$self$"
       },
       "id": "68f6662d-4eb0-4116-8665-0d7e19116811"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "3",
+        "value": {
+          "type": "number",
+          "value": 60
+        }
+      },
+      "id": "e0e39618-609d-4d9f-8532-75e55c8fc783"
     }
   ],
   "playerHit1Script": [],
