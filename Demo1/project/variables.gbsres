@@ -25,6 +25,11 @@
       "id": "3",
       "name": "Selected",
       "symbol": "var_selected"
+    },
+    {
+      "id": "4",
+      "name": "atFridge",
+      "symbol": "var_atfridge"
     }
   ]
 }
