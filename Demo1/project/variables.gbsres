@@ -17,11 +17,6 @@
       "symbol": "var_produce_count"
     },
     {
-      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
-      "name": "Varaible 1",
-      "symbol": "var_varaible_0"
-    },
-    {
       "id": "3",
       "name": "Selected",
       "symbol": "var_selected"
@@ -30,6 +25,71 @@
       "id": "4",
       "name": "atFridge",
       "symbol": "var_atfridge"
+    },
+    {
+      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
+      "name": "Varaible 1",
+      "symbol": "var_varaible_0"
+    },
+    {
+      "id": "5",
+      "name": "Slot1item",
+      "symbol": "var_slot1item"
+    },
+    {
+      "id": "6",
+      "name": "Slot2item",
+      "symbol": "var_slot2item"
+    },
+    {
+      "id": "7",
+      "name": "Slot3item",
+      "symbol": "var_slot3item_0"
+    },
+    {
+      "id": "8",
+      "name": "Slot4item",
+      "symbol": "var_slot4item"
+    },
+    {
+      "id": "9",
+      "name": "Slot5item",
+      "symbol": "var_slot5item"
+    },
+    {
+      "id": "10",
+      "name": "Slot6item",
+      "symbol": "var_slot6item"
+    },
+    {
+      "id": "11",
+      "name": "Slot7item",
+      "symbol": "var_slot7item"
+    },
+    {
+      "id": "12",
+      "name": "Slot8item",
+      "symbol": "var_slot8item"
+    },
+    {
+      "id": "13",
+      "name": "Slot9item",
+      "symbol": "var_slot9item"
+    },
+    {
+      "id": "14",
+      "name": "Slot10item",
+      "symbol": "var_slot10item"
+    },
+    {
+      "id": "15",
+      "name": "Slot11item",
+      "symbol": "var_slot11item"
+    },
+    {
+      "id": "16",
+      "name": "Slot12item",
+      "symbol": "var_slot12item"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
-  "id": "c645685a-9112-43b7-8373-5b6be7bff45f",
-  "name": "Slot 1",
+  "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97",
+  "name": "Slot 2",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -14,7 +14,7 @@
   "persistent": true,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_1",
+  "symbol": "actor_2",
   "script": [],
   "startScript": [
     {
@@ -22,23 +22,14 @@
       "args": {
         "actorId": "$self$"
       },
-      "id": "30643067-82e6-4a44-895a-66bbde7fcec2"
+      "id": "f3687201-a1ab-4cdc-8c7e-2817d3579744"
     }
   ],
-  "updateScript": [
-    {
-      "command": "EVENT_ACTOR_SET_SPRITE",
-      "args": {
-        "actorId": "$self$",
-        "spriteSheetId": "e1d3d664-e5f5-44a3-8d85-0edc32bb97e3"
-      },
-      "id": "c8cebf49-0a63-447e-bf91-2f999d76fc24"
-    }
-  ],
+  "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 28,
+  "x": 32,
   "y": 4,
-  "_index": 1
+  "_index": 2
 }

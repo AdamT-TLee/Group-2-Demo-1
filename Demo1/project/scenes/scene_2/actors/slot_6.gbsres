@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
-  "id": "42cb779c-99bd-46f2-835f-d15386e5623c",
-  "name": "",
+  "id": "8a7df4e1-d389-47f0-b255-03d0e8833e05",
+  "name": "Slot 6",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -14,7 +14,7 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_3",
+  "symbol": "actor_6",
   "script": [],
   "startScript": [
     {
@@ -22,7 +22,7 @@
       "args": {
         "actorId": "$self$"
       },
-      "id": "ff4ef508-5fe3-4c85-8a05-52d1b2fea07b"
+      "id": "a1d05a40-26b6-4b2b-8f77-66fd1fadd1d8"
     }
   ],
   "updateScript": [],
@@ -30,6 +30,6 @@
   "hit2Script": [],
   "hit3Script": [],
   "x": 36,
-  "y": 3,
-  "_index": 3
+  "y": 8,
+  "_index": 6
 }

@@ -34,10 +34,11 @@
           },
           "valueB": {
             "type": "number",
-            "value": 1
+            "value": 0
           }
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -53,6 +54,13 @@
         "false": []
       },
       "id": "5f1f919e-22fa-4a33-91e3-71d065c0b1fe"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "c8bcd5f7-b1a0-43f4-b4d7-2ac930b4f9fd"
+      },
+      "id": "eed15555-a51e-48d3-aadc-b32ce7728af1"
     }
   ]
 }
