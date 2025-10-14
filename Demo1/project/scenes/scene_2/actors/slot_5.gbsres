@@ -23,13 +23,24 @@
         "actorId": "$self$"
       },
       "id": "13d230ca-ae94-43e2-a92d-ecd202f9571d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "587c097b-d2da-48c2-835f-5730d881013f"
     }
   ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 32,
-  "y": 8,
+  "x": 29,
+  "y": 7,
   "_index": 5
 }

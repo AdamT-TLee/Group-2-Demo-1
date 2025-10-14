@@ -1,8 +1,8 @@
 {
   "_resourceType": "background",
-  "id": "d8382ae3-54f7-403d-a45c-4e4e2e2488fe",
+  "id": "9338db21-ef0d-4fb2-bc89-f0c2510289e7",
   "name": "fridge(0,0)",
-  "symbol": "bg_fridge_0_0_",
+  "symbol": "sprite_fridge_0_0_",
   "width": 20,
   "height": 18,
   "imageWidth": 160,

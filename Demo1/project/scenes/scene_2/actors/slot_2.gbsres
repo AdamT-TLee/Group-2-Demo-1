@@ -23,13 +23,85 @@
         "actorId": "$self$"
       },
       "id": "f3687201-a1ab-4cdc-8c7e-2817d3579744"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "5d26fb86-06ab-4640-a9c0-1d9e98b8390f"
     }
   ],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "06871f6e-ffce-4fa5-b92f-973423eb59ff",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "3"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V3]$": {
+                "type": "variable",
+                "value": "L3"
+              },
+              "$actor[0]$": "$self$",
+              "$variable[V4]$": {
+                "type": "variable",
+                "value": "L2"
+              }
+            },
+            "id": "8820e97b-643d-4fb7-a7de-87bc77870326"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "8814af83-889b-4154-b6db-bfb3cb6286f5"
+          }
+        ],
+        "false": []
+      },
+      "id": "73a93749-308c-41cc-b041-52650ef92536"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 32,
-  "y": 4,
+  "x": 29,
+  "y": 3,
   "_index": 2
 }

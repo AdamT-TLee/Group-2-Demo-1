@@ -23,22 +23,85 @@
         "actorId": "$self$"
       },
       "id": "30643067-82e6-4a44-895a-66bbde7fcec2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "515efd33-fa5d-46ad-8545-6d9da5bb0f4f"
     }
   ],
   "updateScript": [
     {
-      "command": "EVENT_ACTOR_SET_SPRITE",
+      "command": "EVENT_IF",
       "args": {
-        "actorId": "$self$",
-        "spriteSheetId": "e1d3d664-e5f5-44a3-8d85-0edc32bb97e3"
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
       },
-      "id": "c8cebf49-0a63-447e-bf91-2f999d76fc24"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "06871f6e-ffce-4fa5-b92f-973423eb59ff",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "3"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L2"
+              },
+              "$variable[V3]$": {
+                "type": "variable",
+                "value": "L3"
+              },
+              "$actor[0]$": "$self$",
+              "$variable[V4]$": {
+                "type": "variable",
+                "value": "L4"
+              }
+            },
+            "id": "32d2a4de-ed01-4138-85ba-1f0fecf0f0bd"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "9e0858b4-6d98-4d46-93ca-d4e65479ff81"
+          }
+        ],
+        "false": []
+      },
+      "id": "38fe37f1-2358-4729-99d7-2bd9f763b05d"
     }
   ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 28,
-  "y": 4,
+  "x": 25,
+  "y": 3,
   "_index": 1
 }

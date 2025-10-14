@@ -1,8 +1,8 @@
 {
   "_resourceType": "background",
-  "id": "0e9416aa-eec0-421a-a7c7-54c6ac7d2319",
+  "id": "91392b67-45d3-4f20-b968-d89adffc9aaa",
   "name": "newFiridge",
-  "symbol": "bg_newfiridge",
+  "symbol": "sprite_newfiridge",
   "width": 32,
   "height": 32,
   "imageWidth": 256,

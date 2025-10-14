@@ -4,7 +4,7 @@
     {
       "id": "0",
       "name": "HighlightCol",
-      "symbol": "var_highlightcol"
+      "symbol": "var_highlightcol_0"
     },
     {
       "id": "1",
@@ -13,15 +13,6 @@
     },
     {
       "id": "2",
-<<<<<<< HEAD
-      "name": "AtFridge",
-      "symbol": "var_atfridge"
-    },
-    {
-      "id": "3",
-      "name": "TIMER",
-      "symbol": "var_timer"
-=======
       "name": "Produce Count",
       "symbol": "var_produce_count"
     },
@@ -34,30 +25,6 @@
       "id": "4",
       "name": "atFridge",
       "symbol": "var_atfridge"
->>>>>>> placement
-    },
-    {
-      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
-      "name": "Varaible 1",
-<<<<<<< HEAD
-      "symbol": "var_varaible_1"
-    },
-    {
-      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L0",
-      "name": "MINUTES",
-      "symbol": "var_minutes"
-    },
-    {
-      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L1",
-      "name": "SECONDS",
-      "symbol": "var_seconds"
-    },
-    {
-      "id": "42c14d8f-e17b-4385-a9c1-a9a3a8d6a210__L2",
-      "name": "INTERVAL",
-      "symbol": "var_interval"
-=======
-      "symbol": "var_varaible_0"
     },
     {
       "id": "5",
@@ -118,7 +85,96 @@
       "id": "16",
       "name": "Slot12item",
       "symbol": "var_slot12item"
->>>>>>> placement
+    },
+    {
+      "id": "17",
+      "name": "TempID",
+      "symbol": "var_tempid"
+    },
+    {
+      "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
+      "name": "Varaible 1",
+      "symbol": "var_varaible_0"
+    },
+    {
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime"
+    },
+    {
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone"
+    },
+    {
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L2",
+      "name": "badZone",
+      "symbol": "var_badzone"
+    },
+    {
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints"
+    },
+    {
+      "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97__L1",
+      "name": "badZone",
+      "symbol": "var_badzone_3"
+    },
+    {
+      "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_0"
+    },
+    {
+      "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L1",
+      "name": "BadZone",
+      "symbol": "var_badzone_1"
+    },
+    {
+      "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L3",
+      "name": "GoodPoints",
+      "symbol": "var_goodpoints_1"
+    },
+    {
+      "id": "b38ab11a-c8e6-465f-8f3e-63458aac52ab__L1",
+      "name": "BadZone",
+      "symbol": "var_badzone_2"
+    },
+    {
+      "id": "b38ab11a-c8e6-465f-8f3e-63458aac52ab__L3",
+      "name": "GoodPoints",
+      "symbol": "var_goodpoints_2"
+    },
+    {
+      "id": "b38ab11a-c8e6-465f-8f3e-63458aac52ab__L2",
+      "name": "GoodZone",
+      "symbol": "var_goodzone_0"
+    },
+    {
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints"
+    },
+    {
+      "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97__L0",
+      "name": "goodZone",
+      "symbol": "var_goodzone_1"
+    },
+    {
+      "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97__L2",
+      "name": "badPoints",
+      "symbol": "var_badpoints_0"
+    },
+    {
+      "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L0",
+      "name": "goodZone",
+      "symbol": "var_goodzone_2"
+    },
+    {
+      "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L2",
+      "name": "badPoints",
+      "symbol": "var_badpoints_1"
     }
   ]
 }
