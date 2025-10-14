@@ -1,13 +1,13 @@
 {
   "_resourceType": "sprite",
   "id": "4e7b7c46-6e16-4fbf-8088-35149c7847b9",
-  "name": "block_numbers_gb_8_05",
+  "name": "zero",
   "symbol": "sprite_block_numbers_gb_8_0",
-  "numFrames": 5,
-  "filename": "block_numbers_gb_8_05.png",
-  "checksum": "f75d96a70430e18683679c293d5a5f0baa20e97d",
-  "width": 80,
-  "height": 8,
+  "numFrames": 0.5,
+  "filename": "zero.png",
+  "checksum": "e96b93e265a83bf35954b47cf1fc80ad3f091f93",
+  "width": 8,
+  "height": 16,
   "states": [
     {
       "id": "2c8879b2-e162-440f-963a-f152b8958ba7",

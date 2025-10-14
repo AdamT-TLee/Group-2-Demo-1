@@ -169,12 +169,42 @@
     {
       "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L0",
       "name": "goodZone",
-      "symbol": "var_goodzone_2"
+      "symbol": "var_goodzone_3"
     },
     {
       "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L2",
       "name": "badPoints",
       "symbol": "var_badpoints_1"
+    },
+    {
+      "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97__L4",
+      "name": "firstTime",
+      "symbol": "var_firsttime_0"
+    },
+    {
+      "id": "42cb779c-99bd-46f2-835f-d15386e5623c__L4",
+      "name": "firstTIme",
+      "symbol": "var_firsttime_1"
+    },
+    {
+      "id": "18",
+      "name": "MINS",
+      "symbol": "var_mins_0"
+    },
+    {
+      "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L0",
+      "name": "seconds",
+      "symbol": "var_seconds"
+    },
+    {
+      "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L3",
+      "name": "mins",
+      "symbol": "var_mins"
+    },
+    {
+      "id": "19",
+      "name": "SECS",
+      "symbol": "var_secs"
     }
   ]
 }

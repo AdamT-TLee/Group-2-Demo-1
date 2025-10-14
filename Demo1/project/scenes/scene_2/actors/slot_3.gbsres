@@ -44,7 +44,7 @@
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "L0"
+            "value": "L4"
           },
           "valueB": {
             "type": "true"
@@ -102,7 +102,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 33,
+  "x": 25,
   "y": 3,
   "_index": 3
 }
