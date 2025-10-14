@@ -13,8 +13,8 @@
   "collisions": "002d0+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 152,
-  "y": 136,
+  "x": 60,
+  "y": 112,
   "script": [
     {
       "command": "EVENT_SET_VALUE",
@@ -58,6 +58,17 @@
         }
       },
       "id": "c9f9acf8-7070-4e5e-97d1-61940bf81301"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "20",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "077d8a46-ce1f-44ae-81f9-a7d05aacb7ef"
     }
   ],
   "playerHit1Script": [],

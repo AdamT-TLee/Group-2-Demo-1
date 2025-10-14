@@ -630,7 +630,7 @@
                       "type": "number",
                       "value": 0
                     },
-                    "speed": 4
+                    "speed": 10
                   },
                   "id": "43767d83-45bd-4266-bac8-fe1be66f9053"
                 },
@@ -664,7 +664,7 @@
                       "type": "number",
                       "value": 0
                     },
-                    "speed": 4
+                    "speed": 10
                   },
                   "id": "7ecaea19-f911-4446-afdd-f468b2a6d265"
                 },
