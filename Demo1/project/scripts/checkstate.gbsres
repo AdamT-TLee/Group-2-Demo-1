@@ -1,0 +1,10 @@
+{
+  "_resourceType": "script",
+  "id": "294679b9-07d6-4aaf-8c7f-47e4d8bd48da",
+  "name": "checkState",
+  "description": "0 = early zone\n1 = bad zone",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_5",
+  "script": []
+}

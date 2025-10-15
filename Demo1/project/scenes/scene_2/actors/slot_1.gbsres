@@ -33,6 +33,14 @@
         }
       },
       "id": "515efd33-fa5d-46ad-8545-6d9da5bb0f4f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "dff731a9-c610-4d02-8895-f23bcb6fbf42"
     }
   ],
   "updateScript": [
@@ -49,7 +57,7 @@
             "type": "true"
           }
         },
-        "__collapseElse": true,
+        "__collapseElse": false,
         "__collapse": false
       },
       "children": {
@@ -91,9 +99,54 @@
               }
             },
             "id": "9e0858b4-6d98-4d46-93ca-d4e65479ff81"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L5",
+              "value": {
+                "type": "add",
+                "valueA": {
+                  "type": "variable",
+                  "value": "19"
+                },
+                "valueB": {
+                  "type": "mul",
+                  "valueA": {
+                    "type": "variable",
+                    "value": "18"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 60
+                  }
+                }
+              }
+            },
+            "id": "6397435d-d9c6-4c9f-92ab-d87128938f5b"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f2d3b803-29d8-4216-ae07-9b9b34c620e9",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "L5"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L2"
+              }
+            },
+            "id": "30672183-9e2b-4a7f-a117-84e2c55c779a"
+          }
+        ]
       },
       "id": "38fe37f1-2358-4729-99d7-2bd9f763b05d"
     }
@@ -101,7 +154,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 29,
-  "y": 3,
+  "x": 18,
+  "y": 15,
   "_index": 1
 }

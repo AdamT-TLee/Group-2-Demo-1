@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "8a7df4e1-d389-47f0-b255-03d0e8833e05",
+  "id": "faa27ba0-8e8e-444c-afb0-b086f8517745",
   "name": "Slot 6",
   "frame": 0,
   "animate": false,
@@ -11,7 +11,7 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": false,
-  "persistent": false,
+  "persistent": true,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_6",
@@ -22,14 +22,139 @@
       "args": {
         "actorId": "$self$"
       },
-      "id": "a1d05a40-26b6-4b2b-8f77-66fd1fadd1d8"
+      "id": "684f797c-57ba-4f32-b34f-6556b3f8908e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "f1189a73-e8b7-42c0-b9e4-4e282a848e39"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "407a5741-5f6a-4faa-b3be-64c1162ed8f2"
     }
   ],
-  "updateScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "true"
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "06871f6e-ffce-4fa5-b92f-973423eb59ff",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "3"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L2"
+              },
+              "$variable[V3]$": {
+                "type": "variable",
+                "value": "L3"
+              },
+              "$actor[0]$": "$self$",
+              "$variable[V4]$": {
+                "type": "variable",
+                "value": "L4"
+              }
+            },
+            "id": "d56e5c62-a16a-479b-99f4-8495c3fde37c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "292aa1ab-093b-4b0c-84c3-22a6a4735ffe"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L5",
+              "value": {
+                "type": "add",
+                "valueA": {
+                  "type": "variable",
+                  "value": "19"
+                },
+                "valueB": {
+                  "type": "mul",
+                  "valueA": {
+                    "type": "variable",
+                    "value": "18"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 60
+                  }
+                }
+              }
+            },
+            "id": "7b679cff-dd27-453d-8c14-206180c5d4d8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f2d3b803-29d8-4216-ae07-9b9b34c620e9",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "L5"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L2"
+              }
+            },
+            "id": "5886751c-de9b-4efc-8055-a3256681a39b"
+          }
+        ]
+      },
+      "id": "49230da9-2dec-4177-b33b-e75d85d1eb0b"
+    }
+  ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 33,
-  "y": 7,
-  "_index": 6
+  "x": 26,
+  "y": 19,
+  "_index": 9
 }

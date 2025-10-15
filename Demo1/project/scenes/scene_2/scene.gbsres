@@ -3,10 +3,10 @@
   "id": "3ca26aef-91b6-4504-ba98-fe6a233210d7",
   "_index": 0,
   "name": "Scene 2",
-  "backgroundId": "92748cf9-06b0-4345-b050-9699357f7a3c",
+  "backgroundId": "2cb59004-6d81-43af-a128-daa53249f6ed",
   "tilesetId": "",
   "width": 40,
-  "height": 18,
+  "height": 40,
   "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
@@ -58,6 +58,21 @@
         }
       },
       "id": "c9f9acf8-7070-4e5e-97d1-61940bf81301"
+    },
+    {
+      "command": "EVENT_CAMERA_MOVE_TO",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "speed": 0
+      },
+      "id": "89752d39-b1e9-4103-b9bd-c14662b6b097"
     }
   ],
   "playerHit1Script": [],

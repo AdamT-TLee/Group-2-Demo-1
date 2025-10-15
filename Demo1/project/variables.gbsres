@@ -92,6 +92,16 @@
       "symbol": "var_tempid"
     },
     {
+      "id": "18",
+      "name": "MINS",
+      "symbol": "var_mins_0"
+    },
+    {
+      "id": "19",
+      "name": "SECS",
+      "symbol": "var_secs"
+    },
+    {
       "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
       "name": "Varaible 1",
       "symbol": "var_varaible_0"
@@ -187,11 +197,6 @@
       "symbol": "var_firsttime_1"
     },
     {
-      "id": "18",
-      "name": "MINS",
-      "symbol": "var_mins_0"
-    },
-    {
       "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L0",
       "name": "seconds",
       "symbol": "var_seconds"
@@ -202,9 +207,169 @@
       "symbol": "var_mins"
     },
     {
-      "id": "19",
-      "name": "SECS",
-      "symbol": "var_secs"
+      "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L5",
+      "name": "delta",
+      "symbol": "var_delta"
+    },
+    {
+      "id": "20",
+      "name": "currentDelta",
+      "symbol": "var_currentdelta"
+    },
+    {
+      "id": "21",
+      "name": "difference",
+      "symbol": "var_difference"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_2"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_2"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_0"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_3"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_2"
+    },
+    {
+      "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L5",
+      "name": "delta",
+      "symbol": "var_delta_0"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_3"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_4"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_4"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_4"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_3"
+    },
+    {
+      "id": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c__L5",
+      "name": "delta",
+      "symbol": "var_delta_1"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_4"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_5"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_5"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_5"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_4"
+    },
+    {
+      "id": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78__L5",
+      "name": "delta",
+      "symbol": "var_delta_2"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_5"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_6"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_6"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_6"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_5"
+    },
+    {
+      "id": "0551ee6d-0b20-4345-8aa2-0ee69730d931__L5",
+      "name": "delta",
+      "symbol": "var_delta_3"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_6"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_7"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_7"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_7"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_6"
+    },
+    {
+      "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L5",
+      "name": "delta",
+      "symbol": "var_delta_4"
     }
   ]
 }

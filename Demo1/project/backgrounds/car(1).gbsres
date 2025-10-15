@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "7cd4365d-b66f-4ff8-b2a4-f56e94274016",
+  "name": "car(1)",
+  "symbol": "bg_car_1_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "car(1).png",
+  "tileColors": "",
+  "autoColor": false
+}

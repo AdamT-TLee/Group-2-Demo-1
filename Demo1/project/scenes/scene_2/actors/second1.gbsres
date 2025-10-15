@@ -29,31 +29,6 @@
       "command": "PT_EVENT_RTC_START",
       "args": {},
       "id": "251dc10c-e32a-4526-b9cf-d7e4c8402bf0"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "MINS $18$ \nsecs $19$"
-        ],
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "6c770b8c-2676-436f-9fb4-a006e1943486"
     }
   ],
   "updateScript": [
@@ -312,7 +287,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 37,
+  "x": 9,
   "y": 1,
-  "_index": 7
+  "_index": 2
 }

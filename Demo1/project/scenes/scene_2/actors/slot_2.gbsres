@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "d5fc7da6-09ca-4c8f-b587-ec612f452f97",
+  "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
   "name": "Slot 2",
   "frame": 0,
   "animate": false,
@@ -22,7 +22,7 @@
       "args": {
         "actorId": "$self$"
       },
-      "id": "f3687201-a1ab-4cdc-8c7e-2817d3579744"
+      "id": "f1441c1a-22aa-4144-b385-4e886f58bf14"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -32,7 +32,15 @@
           "type": "true"
         }
       },
-      "id": "5d26fb86-06ab-4640-a9c0-1d9e98b8390f"
+      "id": "d8353b1f-953e-4f9c-8241-bf1730396f11"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "619be0fd-7669-493a-9fb9-bfadb64383d3"
     }
   ],
   "updateScript": [
@@ -43,13 +51,13 @@
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "L4"
+            "value": "L0"
           },
           "valueB": {
             "type": "true"
           }
         },
-        "__collapseElse": true,
+        "__collapseElse": false,
         "__collapse": false
       },
       "children": {
@@ -64,11 +72,11 @@
               },
               "$variable[V1]$": {
                 "type": "variable",
-                "value": "L0"
+                "value": "L1"
               },
               "$variable[V2]$": {
                 "type": "variable",
-                "value": "L1"
+                "value": "L2"
               },
               "$variable[V3]$": {
                 "type": "variable",
@@ -77,10 +85,10 @@
               "$actor[0]$": "$self$",
               "$variable[V4]$": {
                 "type": "variable",
-                "value": "L2"
+                "value": "L4"
               }
             },
-            "id": "8820e97b-643d-4fb7-a7de-87bc77870326"
+            "id": "2035e836-c49b-4799-ac7b-54a05f5e0047"
           },
           {
             "command": "EVENT_SET_VALUE",
@@ -90,18 +98,63 @@
                 "type": "false"
               }
             },
-            "id": "8814af83-889b-4154-b6db-bfb3cb6286f5"
+            "id": "86282428-ab60-41cd-8ea9-a1ee37df17c8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L5",
+              "value": {
+                "type": "add",
+                "valueA": {
+                  "type": "variable",
+                  "value": "19"
+                },
+                "valueB": {
+                  "type": "mul",
+                  "valueA": {
+                    "type": "variable",
+                    "value": "18"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 60
+                  }
+                }
+              }
+            },
+            "id": "64f930e7-7ffb-4a39-9c65-78eae29d18f1"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f2d3b803-29d8-4216-ae07-9b9b34c620e9",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "L5"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "L1"
+              },
+              "$variable[V2]$": {
+                "type": "variable",
+                "value": "L2"
+              }
+            },
+            "id": "9e8000a1-9c52-4805-bb5d-653878522526"
+          }
+        ]
       },
-      "id": "73a93749-308c-41cc-b041-52650ef92536"
+      "id": "32e7435e-3e03-422e-ab08-33bca39d432d"
     }
   ],
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 33,
-  "y": 3,
-  "_index": 2
+  "x": 22,
+  "y": 15,
+  "_index": 5
 }
