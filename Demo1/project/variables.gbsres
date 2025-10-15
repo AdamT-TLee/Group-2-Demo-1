@@ -207,6 +207,7 @@
       "symbol": "var_mins"
     },
     {
+<<<<<<< HEAD
       "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L5",
       "name": "delta",
       "symbol": "var_delta"
@@ -370,6 +371,11 @@
       "id": "faa27ba0-8e8e-444c-afb0-b086f8517745__L5",
       "name": "delta",
       "symbol": "var_delta_4"
+=======
+      "id": "20",
+      "name": "Score",
+      "symbol": "var_score"
+>>>>>>> de4efdfd6ad0fedce4e61fc0ecf44b84c43999a8
     }
   ]
 }

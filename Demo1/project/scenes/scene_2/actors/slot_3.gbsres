@@ -154,7 +154,13 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
+<<<<<<< HEAD
   "x": 26,
   "y": 15,
   "_index": 6
+=======
+  "x": 25,
+  "y": 2,
+  "_index": 3
+>>>>>>> de4efdfd6ad0fedce4e61fc0ecf44b84c43999a8
 }
