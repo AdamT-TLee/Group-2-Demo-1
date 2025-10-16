@@ -8,5 +8,6 @@
   "imageWidth": 320,
   "imageHeight": 320,
   "filename": "Fridge2 (1).png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

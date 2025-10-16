@@ -3,57 +3,478 @@
   "id": "f8aa5651-2e9f-45a0-98b7-8ec4b4ef8454",
   "name": "Place",
   "description": "",
-  "variables": {},
-  "actors": {
-    "0": {
-      "id": "0",
-      "name": "Selector"
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "FridgeX",
+      "passByReference": true
     },
-    "1": {
-      "id": "1",
-      "name": "Slot"
+    "V1": {
+      "id": "V1",
+      "name": "FridgeY",
+      "passByReference": true
     }
   },
+  "actors": {},
   "symbol": "script_2",
   "script": [
     {
-      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "command": "EVENT_IF",
       "args": {
-        "actorId": "1",
-        "x": {
-          "type": "property",
-          "target": "0",
-          "property": "xpos"
-        },
-        "y": {
-          "type": "sub",
+        "condition": {
+          "type": "and",
           "valueA": {
-            "type": "property",
-            "target": "0",
-            "property": "ypos"
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
           },
           "valueB": {
-            "type": "number",
-            "value": 0
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__label": "(0, 0)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "8a723a4d-b9a8-41f1-9a85-5538d694a015"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
           }
         },
         "__collapseElse": true,
-        "__collapse": false
+        "__disableElse": true,
+        "__collapse": false,
+        "__label": "(0, 1)"
       },
       "children": {
-        "true": [
-          {
-            "command": "EVENT_ACTOR_ACTIVATE",
-            "args": {
-              "actorId": "1",
-              "__collapse": false
-            },
-            "id": "f2554649-f15a-44e3-9725-808936d40c62"
-          }
-        ],
+        "true": [],
         "false": []
       },
-      "id": "5f1f919e-22fa-4a33-91e3-71d065c0b1fe"
+      "id": "2b3302a1-ca22-4e17-b07b-19bb001db0f5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(0, 2)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "b27e67a0-e6a9-44b2-87fd-e381372694b3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(1, 0)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "9ba55fea-a4dd-4271-a3d6-c826865f6935"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__collapse": false,
+        "__label": "(1, 1)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "da904a6e-b8b7-4aeb-8e4d-2b43321d0227"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(1,2)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "35dae0f1-9c21-4635-bb0c-3ad4a61dce43"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(2, 0)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "71957135-35d8-4987-bfb9-1e59430420d1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(2, 1)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "a3067890-7887-40eb-a320-6e87323d225d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(2, 2)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "2560b032-e917-4ec0-ae8b-f4faf7b52ee0"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(3, 0)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "56c34f26-5e75-42b8-aecf-2bcec682265a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true,
+        "__label": "(3, 1)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "7285d740-89d2-4693-9a20-716e7d37000e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "and",
+          "valueA": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V0"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          },
+          "valueB": {
+            "type": "eq",
+            "valueA": {
+              "type": "variable",
+              "value": "V1"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 0
+            }
+          }
+        },
+        "__collapseElse": false,
+        "__disableElse": true,
+        "__label": "(3, 2)"
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "fb19c518-e7d0-4a8f-a125-f63292919294"
     }
   ]
 }

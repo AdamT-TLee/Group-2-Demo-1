@@ -102,6 +102,16 @@
       "symbol": "var_secs"
     },
     {
+      "id": "20",
+      "name": "currentDelta",
+      "symbol": "var_currentdelta"
+    },
+    {
+      "id": "21",
+      "name": "difference",
+      "symbol": "var_difference"
+    },
+    {
       "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
       "name": "Varaible 1",
       "symbol": "var_varaible_0"
@@ -210,16 +220,6 @@
       "id": "c645685a-9112-43b7-8373-5b6be7bff45f__L5",
       "name": "delta",
       "symbol": "var_delta"
-    },
-    {
-      "id": "20",
-      "name": "currentDelta",
-      "symbol": "var_currentdelta"
-    },
-    {
-      "id": "21",
-      "name": "difference",
-      "symbol": "var_difference"
     },
     {
       "id": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0__L0",
