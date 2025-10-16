@@ -13,8 +13,8 @@
   "collisions": "002d0+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 60,
-  "y": 112,
+  "x": 152,
+  "y": 136,
   "script": [
     {
       "command": "EVENT_SET_VALUE",
@@ -60,7 +60,6 @@
       "id": "c9f9acf8-7070-4e5e-97d1-61940bf81301"
     },
     {
-<<<<<<< HEAD
       "command": "EVENT_CAMERA_MOVE_TO",
       "args": {
         "x": {
@@ -74,17 +73,6 @@
         "speed": 0
       },
       "id": "89752d39-b1e9-4103-b9bd-c14662b6b097"
-=======
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "20",
-        "value": {
-          "type": "number",
-          "value": 0
-        }
-      },
-      "id": "077d8a46-ce1f-44ae-81f9-a7d05aacb7ef"
->>>>>>> de4efdfd6ad0fedce4e61fc0ecf44b84c43999a8
     }
   ],
   "playerHit1Script": [],

@@ -1,20 +1,11 @@
 {
   "_resourceType": "scene",
-<<<<<<< HEAD
   "id": "2f60db18-b001-416d-abc3-e3a192d31a6f",
   "_index": 1,
   "name": "Scene 2",
   "backgroundId": "7cd4365d-b66f-4ff8-b2a4-f56e94274016",
   "tilesetId": "",
   "width": 20,
-=======
-  "id": "b64ca71b-54ee-4283-96a4-f9e197a782da",
-  "_index": 1,
-  "name": "Scene 2",
-  "backgroundId": "d2dd030a-a5f8-40f8-92e5-1d3ff38a2ffa",
-  "tilesetId": "",
-  "width": 40,
->>>>>>> de4efdfd6ad0fedce4e61fc0ecf44b84c43999a8
   "height": 18,
   "type": "TOPDOWN",
   "paletteIds": [],
@@ -22,7 +13,6 @@
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_2",
-<<<<<<< HEAD
   "x": 561.2352105604101,
   "y": 111.35417958625143,
   "script": [
@@ -63,12 +53,4 @@
   "playerHit2Script": [],
   "playerHit3Script": [],
   "playerSpriteSheetId": "ba89be55-12c7-42ea-996c-a5132e64442b"
-=======
-  "x": 408,
-  "y": 59.428571428571416,
-  "script": [],
-  "playerHit1Script": [],
-  "playerHit2Script": [],
-  "playerHit3Script": []
->>>>>>> de4efdfd6ad0fedce4e61fc0ecf44b84c43999a8
 }
