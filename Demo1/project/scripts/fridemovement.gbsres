@@ -570,6 +570,14 @@
               "$variable[V2]$": {
                 "type": "variable",
                 "value": "22"
+              },
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "1"
+              },
+              "$variable[V1]$": {
+                "type": "variable",
+                "value": "0"
               }
             },
             "id": "ada2e0c4-f117-4679-8d85-9e30e1a889ca"
@@ -805,7 +813,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "$00$ $01$"
+                      " $01$ $00$"
                     ],
                     "__section": "text",
                     "avatarId": "",

@@ -60,7 +60,7 @@
           {
             "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "script": "VM_ACTOR_ACTIVATE .ARG0",
+              "script": "VM_PUSH_CONST 1\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1",
               "references": []
             },
             "id": "f4a0f448-ee16-4204-8f12-ab857e616aee"
@@ -79,7 +79,7 @@
             "type": "eq",
             "valueA": {
               "type": "variable",
-              "value": "V0"
+              "value": "V1"
             },
             "valueB": {
               "type": "number",
@@ -90,7 +90,7 @@
             "type": "eq",
             "valueA": {
               "type": "variable",
-              "value": "V1"
+              "value": "V0"
             },
             "valueB": {
               "type": "number",
@@ -104,7 +104,15 @@
         "__label": "(0, 1)"
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 2\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+            },
+            "id": "cc0d44fd-eb3e-4cca-ac43-bd4ad15a2def"
+          }
+        ],
         "false": []
       },
       "id": "2b3302a1-ca22-4e17-b07b-19bb001db0f5"
@@ -144,15 +152,11 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "variable": "V2",
-              "value": {
-                "type": "number",
-                "value": 3
-              }
+              "script": "VM_PUSH_CONST 3\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
-            "id": "80fb3417-1437-4555-8e76-aed9498dae0a"
+            "id": "647afbb7-2b60-4d9b-ab34-78c407b3b2cc"
           }
         ],
         "false": []
@@ -245,15 +249,11 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "variable": "V2",
-              "value": {
-                "type": "number",
-                "value": 5
-              }
+              "script": "VM_PUSH_CONST 5\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
-            "id": "5318eb78-efc6-4c69-8a6f-33f6d79eea91"
+            "id": "f4cbb964-fbd1-4255-aa00-0e4c7ce83d85"
           }
         ],
         "false": []
