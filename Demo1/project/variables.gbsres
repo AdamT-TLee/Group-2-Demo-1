@@ -465,6 +465,36 @@
       "id": "5da5c232-d856-4f24-b589-9f116598246d__L5",
       "name": "delta",
       "symbol": "var_delta_7"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_10"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_11"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_11"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_11"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_10"
+    },
+    {
+      "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
+      "name": "delta",
+      "symbol": "var_delta_8"
     }
   ]
 }
