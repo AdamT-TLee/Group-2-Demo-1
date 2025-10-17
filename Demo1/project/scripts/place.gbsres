@@ -13,11 +13,6 @@
       "id": "V1",
       "name": "FridgeY",
       "passByReference": true
-    },
-    "V2": {
-      "id": "V2",
-      "name": "Variable C",
-      "passByReference": true
     }
   },
   "actors": {},
@@ -79,7 +74,7 @@
             "type": "eq",
             "valueA": {
               "type": "variable",
-              "value": "V1"
+              "value": "V0"
             },
             "valueB": {
               "type": "number",
@@ -90,7 +85,7 @@
             "type": "eq",
             "valueA": {
               "type": "variable",
-              "value": "V0"
+              "value": "V1"
             },
             "valueB": {
               "type": "number",
@@ -108,7 +103,8 @@
           {
             "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "script": "VM_PUSH_CONST 2\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+              "script": "VM_PUSH_CONST 5\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1",
+              "__collapse": false
             },
             "id": "cc0d44fd-eb3e-4cca-ac43-bd4ad15a2def"
           }
@@ -154,7 +150,7 @@
           {
             "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "script": "VM_PUSH_CONST 3\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+              "script": "VM_PUSH_CONST 6\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
             "id": "647afbb7-2b60-4d9b-ab34-78c407b3b2cc"
           }
@@ -198,15 +194,11 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "variable": "V2",
-              "value": {
-                "type": "number",
-                "value": 4
-              }
+              "script": "VM_PUSH_CONST 7\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
-            "id": "144a79b4-b11a-4f9c-8dff-2ffc24deab36"
+            "id": "48561b7f-3b89-4789-aafa-0bd56b9ebf4f"
           }
         ],
         "false": []
@@ -251,7 +243,7 @@
           {
             "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "script": "VM_PUSH_CONST 5\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+              "script": "VM_PUSH_CONST 8\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
             "id": "f4cbb964-fbd1-4255-aa00-0e4c7ce83d85"
           }
@@ -295,15 +287,11 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SET_VALUE",
+            "command": "EVENT_GBVM_SCRIPT",
             "args": {
-              "variable": "V2",
-              "value": {
-                "type": "number",
-                "value": 6
-              }
+              "script": "VM_PUSH_CONST 9\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
             },
-            "id": "54cd8573-73bb-4ad4-8e2d-90556b0ace7a"
+            "id": "6dfd7d71-93ee-4a42-8868-507766acd83d"
           }
         ],
         "false": []
@@ -343,7 +331,15 @@
         "__label": "(2, 0)"
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 10\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+            },
+            "id": "2d7d2c7a-f048-4e0c-9458-bc5731d4a51d"
+          }
+        ],
         "false": []
       },
       "id": "71957135-35d8-4987-bfb9-1e59430420d1"
@@ -381,7 +377,15 @@
         "__label": "(2, 1)"
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 11\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+            },
+            "id": "03e9cb81-c212-4a76-9144-32bb9a9af700"
+          }
+        ],
         "false": []
       },
       "id": "a3067890-7887-40eb-a320-6e87323d225d"
@@ -419,7 +423,15 @@
         "__label": "(2, 2)"
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_GBVM_SCRIPT",
+            "args": {
+              "script": "VM_PUSH_CONST 12\nVM_ACTOR_ACTIVATE .ARG0\nVM_POP 1"
+            },
+            "id": "b413d91a-cf3f-4209-a691-9a4b3f17e8c3"
+          }
+        ],
         "false": []
       },
       "id": "2560b032-e917-4ec0-ae8b-f4faf7b52ee0"

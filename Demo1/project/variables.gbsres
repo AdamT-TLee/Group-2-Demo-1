@@ -112,6 +112,11 @@
       "symbol": "var_difference"
     },
     {
+      "id": "22",
+      "name": "Item",
+      "symbol": "var_item"
+    },
+    {
       "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
       "name": "Varaible 1",
       "symbol": "var_varaible_0"
@@ -372,9 +377,94 @@
       "symbol": "var_delta_4"
     },
     {
-      "id": "22",
-      "name": "Item",
-      "symbol": "var_item"
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_7"
+    },
+    {
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_8"
+    },
+    {
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_8"
+    },
+    {
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_8"
+    },
+    {
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_7"
+    },
+    {
+      "id": "4a1fee2c-c169-4497-adf8-08edc4bcb93d__L5",
+      "name": "delta",
+      "symbol": "var_delta_5"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_8"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_9"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_9"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_9"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_8"
+    },
+    {
+      "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca__L5",
+      "name": "delta",
+      "symbol": "var_delta_6"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L0",
+      "name": "FirstTime",
+      "symbol": "var_firsttime_9"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L1",
+      "name": "goodZone",
+      "symbol": "var_goodzone_10"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L2",
+      "name": "badZone",
+      "symbol": "var_badzone_10"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L3",
+      "name": "goodPoints",
+      "symbol": "var_goodpoints_10"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L4",
+      "name": "badPoints",
+      "symbol": "var_badpoints_9"
+    },
+    {
+      "id": "5da5c232-d856-4f24-b589-9f116598246d__L5",
+      "name": "delta",
+      "symbol": "var_delta_7"
     }
   ]
 }
