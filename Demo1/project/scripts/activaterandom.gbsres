@@ -1,0 +1,97 @@
+{
+  "_resourceType": "script",
+  "id": "79faaa1f-42fc-4e9e-83ad-eb30c774b100",
+  "name": "activateRandom",
+  "description": "choose random actor to activate",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "SLOTNUM",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "ITEMID",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    },
+    "1": {
+      "id": "1",
+      "name": "Actor B"
+    },
+    "2": {
+      "id": "2",
+      "name": "Actor C"
+    },
+    "3": {
+      "id": "3",
+      "name": "Actor D"
+    },
+    "4": {
+      "id": "4",
+      "name": "Actor E"
+    },
+    "5": {
+      "id": "5",
+      "name": "Actor F"
+    },
+    "6": {
+      "id": "6",
+      "name": "Actor G"
+    },
+    "7": {
+      "id": "7",
+      "name": "Actor H"
+    },
+    "8": {
+      "id": "8",
+      "name": "Actor I"
+    }
+  },
+  "symbol": "script_7",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "V0",
+        "value": {
+          "type": "rnd",
+          "value": {
+            "type": "number",
+            "value": 10
+          }
+        }
+      },
+      "id": "9f30e3f0-9866-4228-9ea4-d0bec3c38a9a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0b61008d-80a0-40a6-8542-b62b1b4678bc",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "V0"
+        },
+        "$actor[0]$": "0",
+        "$actor[1]$": "1",
+        "$actor[2]$": "2",
+        "$actor[3]$": "3",
+        "$actor[4]$": "4",
+        "$actor[5]$": "5",
+        "$actor[6]$": "6",
+        "$actor[7]$": "7",
+        "$actor[8]$": "8",
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "V1"
+        }
+      },
+      "id": "7debd7ee-9a41-4634-8cb3-1e36e8da0baa"
+    }
+  ]
+}

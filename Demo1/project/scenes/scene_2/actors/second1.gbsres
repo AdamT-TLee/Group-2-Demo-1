@@ -29,6 +29,17 @@
       "command": "PT_EVENT_RTC_START",
       "args": {},
       "id": "251dc10c-e32a-4526-b9cf-d7e4c8402bf0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bc47950b-13ad-4eb0-8aba-dd229f175f41"
     }
   ],
   "updateScript": [
@@ -78,6 +89,68 @@
         }
       },
       "id": "a75d2ed6-846f-43a8-82f2-ea9b2c8c816d"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "30"
+      },
+      "id": "8542f404-182a-4ae3-976d-cb99168726c8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "mod",
+            "valueA": {
+              "type": "variable",
+              "value": "30"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 50
+            }
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__disableElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "79faaa1f-42fc-4e9e-83ad-eb30c774b100",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "L4"
+              },
+              "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
+              "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
+              "$actor[2]$": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c",
+              "$actor[3]$": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78",
+              "$actor[4]$": "0551ee6d-0b20-4345-8aa2-0ee69730d931",
+              "$actor[5]$": "faa27ba0-8e8e-444c-afb0-b086f8517745",
+              "$actor[6]$": "4a1fee2c-c169-4497-adf8-08edc4bcb93d",
+              "$actor[7]$": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca",
+              "$actor[8]$": "e291f822-c8a1-46ac-ad37-584e5366294a",
+              "$variable[V1]$": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "85da79c5-5c04-4941-a3d9-adec1092161a"
+          }
+        ],
+        "false": []
+      },
+      "id": "d56b2509-b300-4ebf-9411-dc3e2e29675c"
     },
     {
       "command": "EVENT_IF",

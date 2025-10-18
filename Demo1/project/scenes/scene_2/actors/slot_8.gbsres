@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca",
-  "name": "Slot 4",
+  "name": "Slot 8",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -30,7 +30,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [

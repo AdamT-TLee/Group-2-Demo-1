@@ -12,7 +12,7 @@
   "paletteId": "",
   "isPinned": false,
   "persistent": true,
-  "collisionGroup": "1",
+  "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_2",
   "script": [
@@ -30,7 +30,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [

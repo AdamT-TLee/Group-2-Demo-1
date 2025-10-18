@@ -1,0 +1,140 @@
+{
+  "_resourceType": "script",
+  "id": "269dee4a-93a9-43c7-b183-dd01455cf090",
+  "name": "GiveActorSprite",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    }
+  },
+  "symbol": "script_9",
+  "script": [
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "V0",
+        "choices": 2,
+        "__collapseCase0": false,
+        "value0": 1,
+        "__collapseCase1": false,
+        "value1": 2,
+        "__collapseCase2": false,
+        "value2": 3,
+        "__collapseCase3": false,
+        "value3": 4,
+        "__collapseCase4": false,
+        "value4": 5,
+        "__collapseCase5": false,
+        "value5": 6,
+        "__collapseCase6": false,
+        "value6": 7,
+        "__collapseCase7": false,
+        "value7": 8,
+        "__collapseCase8": false,
+        "value8": 9,
+        "__collapseCase9": false,
+        "value9": 10,
+        "__collapseCase10": false,
+        "value10": 11,
+        "__collapseCase11": false,
+        "value11": 12,
+        "__collapseCase12": false,
+        "value12": 13,
+        "__collapseCase13": false,
+        "value13": 14,
+        "__collapseCase14": false,
+        "value14": 15,
+        "__collapseCase15": false,
+        "value15": 16,
+        "__collapseElse": false
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "IF ORANGE\n"
+            },
+            "id": "baa01afe-5c91-4109-a534-1989ce162935"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0",
+              "spriteSheetId": "6b137916-ac9d-4595-aa19-3613310867c2"
+            },
+            "id": "715b49bc-0cba-4e38-99f4-41d630092175"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "IF APPLE\n"
+            },
+            "id": "d3e3ccf4-83b4-4896-8691-540c2ec3c807"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "2af22feb-ea4c-45e8-a89f-43b9c29199c4"
+            },
+            "id": "e6a4d6d6-04b2-4c16-b223-5e7be9c5726f"
+          }
+        ],
+        "true2": [],
+        "true3": [],
+        "true4": [],
+        "true5": [],
+        "true6": [],
+        "true7": [],
+        "true8": [],
+        "true9": [],
+        "true10": [],
+        "true11": [],
+        "true12": [],
+        "true13": [],
+        "true14": [],
+        "true15": [],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "ELSE"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "52901985-7686-4c44-b5db-6978b6f1cb68"
+          }
+        ]
+      },
+      "id": "0c846f27-0819-4e40-99e1-5aaff8a2f9bf"
+    }
+  ]
+}
