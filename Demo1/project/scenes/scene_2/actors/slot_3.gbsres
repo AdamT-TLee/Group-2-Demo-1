@@ -166,7 +166,8 @@
         },
         "__collapseElse": false,
         "__collapse": false,
-        "__disableElse": true
+        "__disableElse": true,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -262,7 +263,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 26,
-  "y": 15,
+  "x": 12,
+  "y": 7,
   "_index": 5
 }
