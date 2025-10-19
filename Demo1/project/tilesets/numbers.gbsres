@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+  "name": "numbers",
+  "symbol": "tileset_numbers",
+  "width": 10,
+  "height": 1,
+  "imageWidth": 80,
+  "imageHeight": 8,
+  "filename": "numbers.png"
+}

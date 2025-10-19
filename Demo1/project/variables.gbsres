@@ -495,6 +495,41 @@
       "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
       "name": "delta",
       "symbol": "var_delta_8"
+    },
+    {
+      "id": "511",
+      "name": "TimeS",
+      "symbol": "var_times"
+    },
+    {
+      "id": "510",
+      "name": "Time10S",
+      "symbol": "var_time10s"
+    },
+    {
+      "id": "509",
+      "name": "Time100s",
+      "symbol": "var_time100s"
+    },
+    {
+      "id": "508",
+      "name": "Score1s",
+      "symbol": "var_score1s"
+    },
+    {
+      "id": "507",
+      "name": "Score10s",
+      "symbol": "var_score10s_0"
+    },
+    {
+      "id": "506",
+      "name": "Score100s",
+      "symbol": "var_score100s"
+    },
+    {
+      "id": "505",
+      "name": "Score1000s",
+      "symbol": "var_score1000s"
     }
   ]
 }

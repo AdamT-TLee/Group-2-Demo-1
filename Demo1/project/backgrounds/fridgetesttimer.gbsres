@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "45e97d3a-39f2-4cd7-898c-e7664843119c",
+  "name": "FridgeTestTimer",
+  "symbol": "bg_fridgetesttimer",
+  "width": 40,
+  "height": 40,
+  "imageWidth": 320,
+  "imageHeight": 320,
+  "filename": "FridgeTestTimer.png",
+  "tileColors": "",
+  "autoColor": false
+}

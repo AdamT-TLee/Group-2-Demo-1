@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "cc5796f4-dc04-41aa-b29f-9e5dcf3a2ef2",
+  "name": "Fridge_3x3(real) (timer)",
+  "symbol": "bg_fridge_3x3_real_timer_",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "Fridge_3x3(real) (timer).png",
+  "tileColors": ""
+}
