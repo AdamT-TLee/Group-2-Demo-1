@@ -6,8 +6,8 @@
   "variables": {
     "V0": {
       "id": "V0",
-      "name": "Variable A",
-      "passByReference": true
+      "name": "ITEMID",
+      "passByReference": false
     }
   },
   "actors": {
@@ -22,7 +22,7 @@
       "command": "EVENT_SWITCH",
       "args": {
         "variable": "V0",
-        "choices": 2,
+        "choices": 4,
         "__collapseCase0": false,
         "value0": 1,
         "__collapseCase1": false,
@@ -86,14 +86,46 @@
           {
             "command": "EVENT_ACTOR_SET_SPRITE",
             "args": {
-              "actorId": "$self$",
-              "spriteSheetId": "2af22feb-ea4c-45e8-a89f-43b9c29199c4"
+              "actorId": "0",
+              "spriteSheetId": "9361e818-5b32-410c-8975-1588b2402348"
             },
             "id": "e6a4d6d6-04b2-4c16-b223-5e7be9c5726f"
           }
         ],
-        "true2": [],
-        "true3": [],
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "IF BEER"
+            },
+            "id": "9184693d-40b2-42b6-afaa-4d8ad9dd9780"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0",
+              "spriteSheetId": "3c1812ae-9d53-40e1-8f02-7b5238ebc4f7"
+            },
+            "id": "c840e72f-354c-42ae-85e2-fd3d281b4620"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "IF DRAGONFRUIT"
+            },
+            "id": "4ec5ed44-696b-42a7-b847-bef35c167b68"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0",
+              "spriteSheetId": "3237f54d-2dc5-43d1-abb0-0794a7f527ef"
+            },
+            "id": "e85d43b6-99aa-4b7d-9f80-b18239fa1379"
+          }
+        ],
         "true4": [],
         "true5": [],
         "true6": [],
@@ -108,29 +140,19 @@
         "true15": [],
         "false": [
           {
-            "command": "EVENT_TEXT",
+            "command": "EVENT_COMMENT",
             "args": {
-              "text": [
-                "ELSE"
-              ],
-              "__section": "text",
-              "avatarId": "",
-              "minHeight": 4,
-              "maxHeight": 7,
-              "textX": 1,
-              "textY": 1,
-              "textHeight": 5,
-              "position": "bottom",
-              "clearPrevious": true,
-              "showFrame": "true",
-              "speedIn": -1,
-              "speedOut": -1,
-              "closeWhen": "key",
-              "closeButton": "a",
-              "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "text": "IF TOMATO"
             },
-            "id": "52901985-7686-4c44-b5db-6978b6f1cb68"
+            "id": "d39e41d8-fef2-4476-b0f8-64981c4ecc56"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0",
+              "spriteSheetId": "7f74d09f-8e3a-4104-ba78-db30724097db"
+            },
+            "id": "987c1d8d-b117-465e-885c-53a346d53799"
           }
         ]
       },

@@ -4,11 +4,11 @@
   "name": "Slot 3",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "spriteSheetId": "d13f3b74-ea91-43ca-9352-1dbdd89364a5",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
-  "animSpeed": 15,
+  "animSpeed": 255,
   "paletteId": "",
   "isPinned": false,
   "persistent": true,
@@ -141,14 +141,6 @@
         }
       },
       "id": "7cbe69be-5562-42a3-8a42-573fbb8e3eba"
-    },
-    {
-      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
-      "args": {
-        "actorId": "$self$",
-        "speed": 255
-      },
-      "id": "90fdefeb-bfb0-4cd2-b420-4e457d6e6c28"
     }
   ],
   "updateScript": [
@@ -259,51 +251,6 @@
         ]
       },
       "id": "9b28d77c-1f9c-446a-ab90-6be3e63a128d"
-    },
-    {
-      "command": "EVENT_IF",
-      "args": {
-        "condition": {
-          "type": "eq",
-          "valueA": {
-            "type": "mod",
-            "valueA": {
-              "type": "variable",
-              "value": "30"
-            },
-            "valueB": {
-              "type": "number",
-              "value": 30
-            }
-          },
-          "valueB": {
-            "type": "number",
-            "value": 0
-          }
-        },
-        "__collapseElse": false
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_ACTOR_ACTIVATE",
-            "args": {
-              "actorId": "$self$"
-            },
-            "id": "339e8ce0-24dc-4d08-bf0b-2c5cdeb1ffe5"
-          }
-        ],
-        "false": [
-          {
-            "command": "EVENT_ACTOR_DEACTIVATE",
-            "args": {
-              "actorId": "$self$"
-            },
-            "id": "60e392ce-901c-4210-88bb-ad5ffb17d0d1"
-          }
-        ]
-      },
-      "id": "6b9fa1cc-2434-47c4-8895-2edbd40aa936"
     }
   ],
   "hit1Script": [],

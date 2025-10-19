@@ -4,11 +4,11 @@
   "name": "Slot 2",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "spriteSheetId": "5815536f-d225-4541-bbc8-d5a0149157e9",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
-  "animSpeed": 15,
+  "animSpeed": 255,
   "paletteId": "",
   "isPinned": false,
   "persistent": true,
@@ -142,14 +142,6 @@
         }
       },
       "id": "d8353b1f-953e-4f9c-8241-bf1730396f11"
-    },
-    {
-      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
-      "args": {
-        "actorId": "$self$",
-        "speed": 255
-      },
-      "id": "619be0fd-7669-493a-9fb9-bfadb64383d3"
     }
   ],
   "updateScript": [

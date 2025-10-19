@@ -7,12 +7,12 @@
     "V0": {
       "id": "V0",
       "name": "SLOTNUM",
-      "passByReference": true
+      "passByReference": false
     },
     "V1": {
       "id": "V1",
       "name": "ITEMID",
-      "passByReference": true
+      "passByReference": false
     }
   },
   "actors": {
