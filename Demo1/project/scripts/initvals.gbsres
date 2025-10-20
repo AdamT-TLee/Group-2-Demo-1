@@ -1,0 +1,101 @@
+{
+  "_resourceType": "script",
+  "id": "6bb5006b-2113-4ec9-a03c-0c0844c52d19",
+  "name": "initVals",
+  "description": "",
+  "variables": {},
+  "actors": {},
+  "symbol": "script_11",
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "5",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "ed093839-49e6-4e42-9e6b-eac52f43ab8b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "fc2c743d-f6e6-4305-b376-ec4532cbc9a1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "7",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "501e3e02-fc6b-4276-9f5f-dece9cbf0231"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "1d618998-0442-437c-bea0-01344b36e416"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "9",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "a0aea85a-dc99-4e86-96f3-1c5183943d68"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "10",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "85788966-4fb6-4819-8ef1-ea2d4e458f9e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "11",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "84c16208-8715-4ac0-ae53-db2ac075f956"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "12",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "3873c706-3e58-4854-a631-ed149fce226b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "13",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "b587f694-e0f7-4526-a558-2df05c521092"
+    }
+  ]
+}

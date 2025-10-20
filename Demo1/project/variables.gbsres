@@ -117,6 +117,41 @@
       "symbol": "var_item"
     },
     {
+      "id": "505",
+      "name": "Score1000s",
+      "symbol": "var_score1000s"
+    },
+    {
+      "id": "506",
+      "name": "Score100s",
+      "symbol": "var_score100s"
+    },
+    {
+      "id": "507",
+      "name": "Score10s",
+      "symbol": "var_score10s_0"
+    },
+    {
+      "id": "508",
+      "name": "Score1s",
+      "symbol": "var_score1s"
+    },
+    {
+      "id": "509",
+      "name": "Time100s",
+      "symbol": "var_time100s"
+    },
+    {
+      "id": "510",
+      "name": "Time10S",
+      "symbol": "var_time10s"
+    },
+    {
+      "id": "511",
+      "name": "TimeS",
+      "symbol": "var_times"
+    },
+    {
       "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
       "name": "Varaible 1",
       "symbol": "var_varaible_0"
@@ -214,7 +249,7 @@
     {
       "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L0",
       "name": "seconds",
-      "symbol": "var_seconds"
+      "symbol": "var_seconds_0"
     },
     {
       "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L3",
@@ -495,41 +530,6 @@
       "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
       "name": "delta",
       "symbol": "var_delta_8"
-    },
-    {
-      "id": "511",
-      "name": "TimeS",
-      "symbol": "var_times"
-    },
-    {
-      "id": "510",
-      "name": "Time10S",
-      "symbol": "var_time10s"
-    },
-    {
-      "id": "509",
-      "name": "Time100s",
-      "symbol": "var_time100s"
-    },
-    {
-      "id": "508",
-      "name": "Score1s",
-      "symbol": "var_score1s"
-    },
-    {
-      "id": "507",
-      "name": "Score10s",
-      "symbol": "var_score10s_0"
-    },
-    {
-      "id": "506",
-      "name": "Score100s",
-      "symbol": "var_score100s"
-    },
-    {
-      "id": "505",
-      "name": "Score1000s",
-      "symbol": "var_score1000s"
     }
   ]
 }

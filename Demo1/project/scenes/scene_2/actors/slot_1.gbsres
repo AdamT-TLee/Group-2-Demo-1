@@ -4,7 +4,7 @@
   "name": "Slot 1",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "spriteSheetId": "0af3f3d5-9acd-40d2-a56b-7668e59a7bd5",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -30,7 +30,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": true,
+        "__comment": true
       },
       "children": {
         "true": [

@@ -4,7 +4,7 @@
   "name": "Slot 6",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "spriteSheetId": "6e0a6fc5-05fb-489f-a137-aaa26d2d2eb6",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -30,7 +30,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -130,16 +131,6 @@
         "actorId": "$self$"
       },
       "id": "684f797c-57ba-4f32-b34f-6556b3f8908e"
-    },
-    {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "L0",
-        "value": {
-          "type": "true"
-        }
-      },
-      "id": "f1189a73-e8b7-42c0-b9e4-4e282a848e39"
     },
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
@@ -264,5 +255,5 @@
   "hit3Script": [],
   "x": 12,
   "y": 9,
-  "_index": 6
+  "_index": 7
 }

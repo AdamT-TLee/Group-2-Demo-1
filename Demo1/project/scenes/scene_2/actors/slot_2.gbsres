@@ -30,7 +30,8 @@
           }
         },
         "__collapseElse": false,
-        "__collapse": false
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -131,16 +132,6 @@
         "actorId": "$self$"
       },
       "id": "f1441c1a-22aa-4144-b385-4e886f58bf14"
-    },
-    {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "L0",
-        "value": {
-          "type": "true"
-        }
-      },
-      "id": "d8353b1f-953e-4f9c-8241-bf1730396f11"
     },
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
@@ -265,5 +256,5 @@
   "hit3Script": [],
   "x": 10,
   "y": 7,
-  "_index": 2
+  "_index": 3
 }
