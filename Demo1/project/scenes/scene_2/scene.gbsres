@@ -597,6 +597,17 @@
       "command": "EVENT_RNG_SEED",
       "args": {},
       "id": "4af92095-4096-4d47-9883-0fc448906da3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "23",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e9d395e9-3c2c-4bde-9020-f486b555d076"
     }
   ],
   "playerHit1Script": [],

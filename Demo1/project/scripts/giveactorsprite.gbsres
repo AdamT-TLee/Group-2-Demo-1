@@ -147,6 +147,31 @@
             "id": "d39e41d8-fef2-4476-b0f8-64981c4ecc56"
           },
           {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "$V0$"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "13691ce6-482b-4711-84b5-36a6ae0319a6"
+          },
+          {
             "command": "EVENT_ACTOR_SET_SPRITE",
             "args": {
               "actorId": "0",

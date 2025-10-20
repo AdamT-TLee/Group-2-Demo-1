@@ -530,6 +530,21 @@
       "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
       "name": "delta",
       "symbol": "var_delta_8"
+    },
+    {
+      "id": "23",
+      "name": "globalTick",
+      "symbol": "var_globaltick"
+    },
+    {
+      "id": "24",
+      "name": "Random slot",
+      "symbol": "var_random_slot"
+    },
+    {
+      "id": "45",
+      "name": "randomItem",
+      "symbol": "var_randomitem"
     }
   ]
 }

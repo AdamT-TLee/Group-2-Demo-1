@@ -4,11 +4,6 @@
   "name": "activateRandom",
   "description": "choose random actor to activate",
   "variables": {
-    "V0": {
-      "id": "V0",
-      "name": "SLOTNUM",
-      "passByReference": false
-    },
     "V1": {
       "id": "V1",
       "name": "ITEMID",
@@ -56,27 +51,12 @@
   "symbol": "script_7",
   "script": [
     {
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "V0",
-        "value": {
-          "type": "rnd",
-          "value": {
-            "type": "number",
-            "value": 10
-          }
-        },
-        "__collapse": false
-      },
-      "id": "9f30e3f0-9866-4228-9ea4-d0bec3c38a9a"
-    },
-    {
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "0b61008d-80a0-40a6-8542-b62b1b4678bc",
         "$variable[V0]$": {
-          "type": "variable",
-          "value": "V0"
+          "type": "number",
+          "value": 0
         },
         "$actor[0]$": "0",
         "$actor[1]$": "1",
@@ -90,7 +70,8 @@
         "$variable[V1]$": {
           "type": "variable",
           "value": "V1"
-        }
+        },
+        "__collapse": false
       },
       "id": "7debd7ee-9a41-4634-8cb3-1e36e8da0baa"
     }

@@ -11,7 +11,7 @@
   "animSpeed": 15,
   "paletteId": "",
   "isPinned": true,
-  "persistent": false,
+  "persistent": true,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_9",
@@ -213,7 +213,8 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Score Stuff",
-        "__comment": false
+        "__comment": false,
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -728,6 +729,80 @@
         "__collapse": true
       },
       "id": "a5add593-3a6f-4e34-bc07-e501724019a0"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "23"
+      },
+      "id": "58702cef-951e-48f4-8f4d-c8cd57bc327e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L4",
+        "value": {
+          "type": "mod",
+          "valueA": {
+            "type": "variable",
+            "value": "23"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        }
+      },
+      "id": "e8fd154a-ec38-4689-a02f-af19ca0136d4"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "79faaa1f-42fc-4e9e-83ad-eb30c774b100",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              },
+              "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
+              "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
+              "$actor[2]$": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c",
+              "$actor[3]$": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78",
+              "$actor[4]$": "0551ee6d-0b20-4345-8aa2-0ee69730d931",
+              "$actor[5]$": "faa27ba0-8e8e-444c-afb0-b086f8517745",
+              "$actor[6]$": "4a1fee2c-c169-4497-adf8-08edc4bcb93d",
+              "$actor[7]$": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca",
+              "$actor[8]$": "e291f822-c8a1-46ac-ad37-584e5366294a",
+              "$variable[V1]$": {
+                "type": "number",
+                "value": 0
+              },
+              "__collapse": false
+            },
+            "id": "dd633f5d-0334-414c-8628-42ca99873500"
+          }
+        ],
+        "false": []
+      },
+      "id": "ed5f0cdf-270e-4710-a7c0-558669183f16"
     }
   ],
   "hit1Script": [],
