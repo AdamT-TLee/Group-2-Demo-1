@@ -87,6 +87,26 @@
         "customEventId": "6bb5006b-2113-4ec9-a03c-0c0844c52d19"
       },
       "id": "a6fbf05b-0a40-42d3-a183-f76a1418bf25"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "23",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "1966be15-4277-4ca2-a67a-ea7f145c5566"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "33",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "07b46321-e9eb-466e-8dd4-19acebac3fb2"
     }
   ],
   "playerHit1Script": [],

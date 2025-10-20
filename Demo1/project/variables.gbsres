@@ -117,6 +117,11 @@
       "symbol": "var_item"
     },
     {
+      "id": "30",
+      "name": "lo",
+      "symbol": "var_lo"
+    },
+    {
       "id": "1bd53bba-d831-4a5f-839f-6fd7e648e0a7__L0",
       "name": "Varaible 1",
       "symbol": "var_varaible_0"
@@ -214,7 +219,7 @@
     {
       "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L0",
       "name": "seconds",
-      "symbol": "var_seconds"
+      "symbol": "var_seconds_0"
     },
     {
       "id": "407af5ce-8491-4cd3-a920-6426a40579c3__L3",
@@ -497,9 +502,14 @@
       "symbol": "var_delta_8"
     },
     {
-      "id": "30",
-      "name": "GLOBALTICK",
-      "symbol": "var_globaltick"
+      "id": "23",
+      "name": "hasPlaced",
+      "symbol": "var_hasplaced"
+    },
+    {
+      "id": "33",
+      "name": "hasPlaced2",
+      "symbol": "var_hasplaced2"
     }
   ]
 }
