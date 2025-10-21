@@ -123,8 +123,8 @@
     },
     {
       "id": "24",
-      "name": "Random slot",
-      "symbol": "var_random_slot"
+      "name": "itemId",
+      "symbol": "var_itemid"
     },
     {
       "id": "45",
@@ -545,6 +545,36 @@
       "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
       "name": "delta",
       "symbol": "var_delta_8"
+    },
+    {
+      "id": "25",
+      "name": "SlotsFull",
+      "symbol": "var_slotsfull"
+    },
+    {
+      "id": "26",
+      "name": "carSlot",
+      "symbol": "var_carslot"
+    },
+    {
+      "id": "27",
+      "name": "foodLevel",
+      "symbol": "var_foodlevel"
+    },
+    {
+      "id": "41",
+      "name": "randomslot",
+      "symbol": "var_randomslot"
+    },
+    {
+      "id": "28",
+      "name": "rand",
+      "symbol": "var_rand"
+    },
+    {
+      "id": "29",
+      "name": "unlockedItems",
+      "symbol": "var_unlockeditems"
     }
   ]
 }

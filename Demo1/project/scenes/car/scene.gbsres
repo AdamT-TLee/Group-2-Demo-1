@@ -1,0 +1,57 @@
+{
+  "_resourceType": "scene",
+  "id": "2f60db18-b001-416d-abc3-e3a192d31a6f",
+  "_index": 1,
+  "name": "car",
+  "backgroundId": "1ccf4973-761e-4dc3-97fd-17ea337fa2ef",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 561.2352105604101,
+  "y": 111.35417958625143,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "72455091-920b-4073-94c0-849d517ffc2e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "26",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "ad5b8697-d840-4c59-a1fd-5f029f93193b"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "5b981248-4820-4b9b-a240-b81ecd1abea5"
+      },
+      "id": "292ffe8f-150f-4def-a6b6-44b634678ef0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "4d98b6ce-fd1d-4901-b1a8-0422c7154338"
+}

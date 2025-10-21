@@ -24,6 +24,11 @@
         "speed": 255
       },
       "id": "b981a044-7975-4c8e-b598-3d47d4b65c3a"
+    },
+    {
+      "command": "EVENT_RNG_SEED",
+      "args": {},
+      "id": "e14be9f6-13c7-446a-b636-2bc53cd55bde"
     }
   ],
   "updateScript": [
@@ -749,7 +754,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 20
+            "value": 21
           }
         }
       },
@@ -767,9 +772,10 @@
           },
           "valueB": {
             "type": "number",
-            "value": 5
+            "value": 10
           }
-        }
+        },
+        "__collapse": false
       },
       "id": "e8fd154a-ec38-4689-a02f-af19ca0136d4"
     },
@@ -788,7 +794,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -846,7 +852,7 @@
               "customEventId": "62b66a0e-e849-4417-b6fe-72c06159bd4a",
               "$variable[V0]$": {
                 "type": "variable",
-                "value": "L4"
+                "value": "L5"
               },
               "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
               "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
