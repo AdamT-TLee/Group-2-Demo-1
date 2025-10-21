@@ -311,7 +311,7 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "9564eb85-f792-4a8b-8dcf-4ff311649969",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "9fb58487-24c8-40bf-bed0-284024a8105b"
     },
@@ -636,7 +636,8 @@
         "y": {
           "type": "number",
           "value": 7
-        }
+        },
+        "__collapse": true
       },
       "id": "4a490f42-9d2c-4708-ae70-362794c808fb"
     }

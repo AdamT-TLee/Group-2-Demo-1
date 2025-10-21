@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "2ad4c9ce-5fd0-435a-b6cd-bf16cb1d09c4",
+  "name": "megaBAck",
+  "symbol": "bg_megaback",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "megaBAck.png",
+  "tileColors": ""
+}

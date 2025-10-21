@@ -150,7 +150,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -212,7 +212,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -275,7 +275,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -454,6 +454,760 @@
         ]
       },
       "id": "be62b65e-a61e-42fb-a22e-d68c1fd80064"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 8
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 7
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "5"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "5",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "07fee6a9-0969-4e30-a3cc-482aea792b7c"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 1\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "69003e01-f248-4e43-bf90-50d77b147230"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "47634df2-154e-4399-afe1-4cc63bf2ada5"
+                }
+              ],
+              "false": []
+            },
+            "id": "8bde41b0-e0ef-4040-9bea-02c6b94b77ec"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 10
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 7
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "6"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "6",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "05fa3d83-9adc-4839-b018-897957aaaba4"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 3\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "86f603fd-c540-4992-8d20-9bff5683b1dd"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "d359091d-5d5b-4883-9af2-0b29c94cb421"
+                }
+              ],
+              "false": []
+            },
+            "id": "d4dc5cf2-8d80-4a35-ab62-d0f115704229"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 12
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 7
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "7"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "7",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "eb5b8b0a-db93-4293-bcc7-e79fea48cf62"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 4\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "3ee0de0b-b5c8-4c2a-afa5-ec174b4271a6"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "17b4ed89-c492-44a9-8975-3d4e5912a7f4"
+                }
+              ],
+              "false": []
+            },
+            "id": "b925cb83-5dc9-46ce-b764-05c10ab1ffbe"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 8
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 9
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "8"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "8",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "06f2af86-1a60-4ec1-80a2-dfc5f70a8109"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 5\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "c710f4f5-45e9-419f-926b-fc5a11712f32"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c8b7718c-fda4-43a5-8d6d-bc0442ba14af"
+                }
+              ],
+              "false": []
+            },
+            "id": "c3d07cd0-a028-4a39-a7e7-e96e3fe92744"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 10
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 9
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "9"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "9",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "f77d4bf9-b95a-4963-99d9-4bafcb8521d6"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 6\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "3edfb777-aefc-4fb3-9af6-c04f9350232b"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "209430ca-aa9c-458e-a721-aa3aa44b6c95"
+                }
+              ],
+              "false": []
+            },
+            "id": "3fd9d4fb-5c9b-43be-9c64-3a68e046d24b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 12
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 9
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "10"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "10",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "35890fd3-8220-4b5c-8ec7-59c05aa8cdc2"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 7\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "cd54879a-5633-4365-9cdc-37671d1e0782"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "6cd6dcaf-25ab-4ce6-a6f3-650776399fd0"
+                }
+              ],
+              "false": []
+            },
+            "id": "b431c824-1263-4fbd-99cb-27a3a6bd9969"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 8
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 11
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "11"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "11",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "b594624e-d236-4726-aa36-ba1d36d0a3d6"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 8\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "45795cad-6ac5-40d6-81f1-56f5f48b2a8e"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "3cab3606-c163-42da-a1b9-8632bfd44a57"
+                }
+              ],
+              "false": []
+            },
+            "id": "5cd7b6f3-e3ad-466a-99ce-075e8b8e5bad"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 10
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 11
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "12"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "12",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "2be80695-6b58-4ec8-a3a0-e4a49fb86d7f"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 9\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "21e271dc-2fb1-464c-99ba-de73dca4aab3"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "cdce2cd9-6325-423a-ac78-c4c0f05102eb"
+                }
+              ],
+              "false": []
+            },
+            "id": "98263826-2eef-41da-b2a3-2ec604e3e413"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "and",
+                "valueA": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "xpos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 12
+                  }
+                },
+                "valueB": {
+                  "type": "eq",
+                  "valueA": {
+                    "type": "property",
+                    "target": "player",
+                    "property": "ypos"
+                  },
+                  "valueB": {
+                    "type": "number",
+                    "value": 11
+                  }
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": false,
+              "__comment": false,
+              "__disableElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "13"
+                      },
+                      "valueB": {
+                        "type": "true"
+                      }
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "13",
+                          "value": {
+                            "type": "false"
+                          }
+                        },
+                        "id": "01e8855d-7ada-4243-856a-e6e233dd6cee"
+                      },
+                      {
+                        "command": "EVENT_GBVM_SCRIPT",
+                        "args": {
+                          "script": "VM_PUSH_CONST 10\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                        },
+                        "id": "39c27b2f-bf20-43c2-a382-d976da3eae36"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "0a970481-1c6d-4b2a-8ea4-34238e1a7abb"
+                }
+              ],
+              "false": []
+            },
+            "id": "68f78084-57dd-40cb-aa1b-8141d36bfc83"
+          }
+        ]
+      },
+      "id": "ecf85179-a018-45bb-bcef-5ced04acac5c"
     }
   ]
 }
