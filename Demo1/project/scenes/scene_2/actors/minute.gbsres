@@ -740,6 +740,24 @@
     {
       "command": "EVENT_SET_VALUE",
       "args": {
+        "variable": "L0",
+        "value": {
+          "type": "mod",
+          "valueA": {
+            "type": "variable",
+            "value": "23"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 20
+          }
+        }
+      },
+      "id": "79431f05-56e3-4836-b0e7-3d95eab1af07"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
         "variable": "L4",
         "value": {
           "type": "mod",
@@ -770,7 +788,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -803,6 +821,49 @@
         "false": []
       },
       "id": "ed5f0cdf-270e-4710-a7c0-558669183f16"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "62b66a0e-e849-4417-b6fe-72c06159bd4a",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "L4"
+              },
+              "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
+              "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
+              "$actor[2]$": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c",
+              "$actor[3]$": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78",
+              "$actor[4]$": "0551ee6d-0b20-4345-8aa2-0ee69730d931",
+              "$actor[5]$": "faa27ba0-8e8e-444c-afb0-b086f8517745",
+              "$actor[6]$": "4a1fee2c-c169-4497-adf8-08edc4bcb93d",
+              "$actor[7]$": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca",
+              "$actor[8]$": "e291f822-c8a1-46ac-ad37-584e5366294a"
+            },
+            "id": "24b7515d-3da1-4db8-950c-7579b83f2a14"
+          }
+        ],
+        "false": []
+      },
+      "id": "f1848670-2fdb-4185-91d7-78baf8d4d83c"
     }
   ],
   "hit1Script": [],

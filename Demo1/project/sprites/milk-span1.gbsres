@@ -19,6 +19,68 @@
           "id": "2e796c0d-4a84-45ff-8be4-b0d74c95c79d",
           "frames": [
             {
+              "id": "8d75cac1-57f1-474a-9b4a-d5ee2e1a50c2",
+              "tiles": [
+                {
+                  "id": "8c333f6a-8f7c-4796-9015-ad35339a944e",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "68e18298-382d-487a-b86c-64bf2f334131",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "358d590c-c9b0-403a-bb6d-2de71d079a3d",
+              "tiles": [
+                {
+                  "id": "05f2e4ad-4486-4c71-91d8-8d7aebe2b576",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                },
+                {
+                  "id": "c41fe6b6-5f46-429c-b8dc-3b2b17b69040",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "palette": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "objPalette": "OBP0",
+                  "paletteIndex": 0,
+                  "priority": false
+                }
+              ]
+            },
+            {
               "id": "d2946091-8f4a-4257-8e2e-12385257600f",
               "tiles": [
                 {
