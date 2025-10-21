@@ -4,7 +4,44 @@
   "name": "fridgeMovement",
   "description": "",
   "variables": {},
-  "actors": {},
+  "actors": {
+    "0": {
+      "id": "0",
+      "name": "Actor A"
+    },
+    "1": {
+      "id": "1",
+      "name": "Actor B"
+    },
+    "2": {
+      "id": "2",
+      "name": "Actor C"
+    },
+    "3": {
+      "id": "3",
+      "name": "Actor D"
+    },
+    "4": {
+      "id": "4",
+      "name": "Actor E"
+    },
+    "5": {
+      "id": "5",
+      "name": "Actor F"
+    },
+    "6": {
+      "id": "6",
+      "name": "Actor G"
+    },
+    "7": {
+      "id": "7",
+      "name": "Actor H"
+    },
+    "8": {
+      "id": "8",
+      "name": "Actor I"
+    }
+  },
   "symbol": "script_12",
   "script": [
     {
@@ -518,7 +555,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -528,9 +565,151 @@
                           "variable": "5",
                           "value": {
                             "type": "false"
-                          }
+                          },
+                          "__collapse": false
                         },
                         "id": "07fee6a9-0969-4e30-a3cc-482aea792b7c"
+                      },
+                      {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "0",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "95573fca-3c3e-490e-85d5-ee5087291421"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "0",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "c74c01b6-8b94-4079-8d38-e08b02ce6a94"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "0",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "3a1277c8-95f3-4b31-8a1c-dfd46d8d98af"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "a9bca1c0-d67f-4f1d-a1d1-6125f136ab32"
+                                        }
+                                      ]
+                                    },
+                                    "id": "88c62af2-2c6e-4c98-b448-873bd096dc78"
+                                  }
+                                ]
+                              },
+                              "id": "41fc342c-b050-4791-9a3e-f7c339ea203e"
+                            }
+                          ]
+                        },
+                        "id": "608bbbde-4894-42f6-b7d7-4959e52d5395"
                       },
                       {
                         "command": "EVENT_GBVM_SCRIPT",
@@ -600,7 +779,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -615,11 +795,160 @@
                         "id": "05fa3d83-9adc-4839-b018-897957aaaba4"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "1",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "f47310c9-e637-4ea3-92b7-bd7cbe8aaa03"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "1",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "cca54c21-4122-4bcf-83be-66a1e6797aba"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "1",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "a4121ef0-4210-444b-bae7-9ba0a4f9deb4"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "e228f0ab-b53a-46d0-a559-9c35a2db553f"
+                                        }
+                                      ]
+                                    },
+                                    "id": "d8ea97d6-fa2a-4ce8-beb8-c77d4b5a287b"
+                                  }
+                                ]
+                              },
+                              "id": "f3537945-de67-494c-8888-0cf6d967d637"
+                            }
+                          ]
+                        },
+                        "id": "ce62b309-711b-41c3-8cff-3be0d5b4befd"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
-                          "script": "VM_PUSH_CONST 3\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "script": "VM_PUSH_CONST 3\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1",
+                          "__collapse": false
                         },
                         "id": "86f603fd-c540-4992-8d20-9bff5683b1dd"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "5be91530-6c57-4fcd-9635-fe5a34bdb084"
                       }
                     ],
                     "false": []
@@ -682,7 +1011,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -697,11 +1027,159 @@
                         "id": "eb5b8b0a-db93-4293-bcc7-e79fea48cf62"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "2",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "29f32541-4228-4e24-a48b-f42b2b1d9a89"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "2",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "548d4f32-e3ad-467d-bf25-b4ab031ad35b"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "2",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "b4ebbb2b-2d2b-4b16-9067-8c1a1d19e332"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "4c452c1a-110c-43d7-a79b-ea9df04d2dfe"
+                                        }
+                                      ]
+                                    },
+                                    "id": "ae5d54cf-7343-4b52-8325-84b11560085b"
+                                  }
+                                ]
+                              },
+                              "id": "4b5f5782-7d3f-4f04-8653-520bd09dc1ab"
+                            }
+                          ]
+                        },
+                        "id": "ce635927-2e7a-4f79-b044-4ae90569333a"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 4\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "3ee0de0b-b5c8-4c2a-afa5-ec174b4271a6"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "32e68068-7ccb-4d99-b9e3-7cdcaf966891"
                       }
                     ],
                     "false": []
@@ -764,7 +1242,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -779,11 +1258,159 @@
                         "id": "06f2af86-1a60-4ec1-80a2-dfc5f70a8109"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "3",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "85a4f837-f019-40fc-ae77-589c67b6842e"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "3",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "9826e75c-5883-4fc5-a247-7d7f930367e1"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "2",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "0e27b6ba-adf4-40d1-b7ca-7383518d6266"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "f1a640e1-cfef-40ce-9a03-0db8128cc6f2"
+                                        }
+                                      ]
+                                    },
+                                    "id": "46547dd6-ac82-46ee-8868-59f2f68b68c5"
+                                  }
+                                ]
+                              },
+                              "id": "f9648b56-2a26-4143-a4cb-62cb47efbad8"
+                            }
+                          ]
+                        },
+                        "id": "c602fbe2-adc0-41f7-bfb6-17cfb1f96e94"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 5\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "c710f4f5-45e9-419f-926b-fc5a11712f32"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "f9db0b4b-de58-4e83-899c-59a99e60b323"
                       }
                     ],
                     "false": []
@@ -846,7 +1473,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -861,11 +1489,159 @@
                         "id": "f77d4bf9-b95a-4963-99d9-4bafcb8521d6"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "4",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "70cc5112-2757-4c4c-a951-b90d2d4c34bb"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "4",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "43623dab-1531-4f13-b834-a2ab48fbbe7d"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "4",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "ea2fbd00-6408-4e37-9484-81b1792d42d1"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "1da359f4-90b5-416b-9fca-a860ec4ec883"
+                                        }
+                                      ]
+                                    },
+                                    "id": "8592378f-b179-4e72-af69-3c83d321cda5"
+                                  }
+                                ]
+                              },
+                              "id": "7456e339-0f3f-4bf3-b1b5-7a7ed209bb43"
+                            }
+                          ]
+                        },
+                        "id": "6e6dc1ff-7d8a-4364-8c44-8c109b98bf06"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 6\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "3edfb777-aefc-4fb3-9af6-c04f9350232b"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "94acfb67-b1ce-46db-8ac7-86594406f152"
                       }
                     ],
                     "false": []
@@ -928,7 +1704,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -943,11 +1720,159 @@
                         "id": "35890fd3-8220-4b5c-8ec7-59c05aa8cdc2"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "5",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "af0eca7e-bb40-4608-89d7-fce80890a843"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "3",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "3407319d-f5e5-42f1-bc3a-243899b7fe96"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "5",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "e30c3a0e-5436-4967-b8f9-ffbc44b1be9d"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "b9f3df21-426d-457f-8298-af5169b314e4"
+                                        }
+                                      ]
+                                    },
+                                    "id": "079312d2-15c4-42c3-a471-72e44c9389a5"
+                                  }
+                                ]
+                              },
+                              "id": "27534b25-3c95-4f09-8473-09567d09bda9"
+                            }
+                          ]
+                        },
+                        "id": "f3514c7e-056f-47d5-a238-fda3980e8dec"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 7\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "cd54879a-5633-4365-9cdc-37671d1e0782"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "6f85ec24-9b06-4157-a532-4dfb709b809b"
                       }
                     ],
                     "false": []
@@ -1025,11 +1950,159 @@
                         "id": "b594624e-d236-4726-aa36-ba1d36d0a3d6"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "6",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "5e742255-0455-41b3-90eb-b41b1c8b3a30"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "6",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "ad7b9639-689a-4c16-a546-1e4abcf10633"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "6",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "41927062-3377-4b38-8ec7-2064e8cecb41"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "3130b0d8-3bfe-4fa6-972d-e29ada264b38"
+                                        }
+                                      ]
+                                    },
+                                    "id": "894061e4-427e-4d6b-b594-084a205b63f3"
+                                  }
+                                ]
+                              },
+                              "id": "5d48d931-01f6-4a08-9f19-40ab4ca1ee10"
+                            }
+                          ]
+                        },
+                        "id": "8dcdd3f8-758b-45fc-bdbc-b84631ba508f"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 8\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "45795cad-6ac5-40d6-81f1-56f5f48b2a8e"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "00e4b5d0-b23c-48c7-90f0-51fa1ab5e018"
                       }
                     ],
                     "false": []
@@ -1092,7 +2165,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -1102,9 +2176,151 @@
                           "variable": "12",
                           "value": {
                             "type": "false"
-                          }
+                          },
+                          "__collapse": false
                         },
                         "id": "2be80695-6b58-4ec8-a3a0-e4a49fb86d7f"
+                      },
+                      {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "7",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "307f24a6-00a6-45e8-84c6-218e6ac82151"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "7",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "1b6ef334-459e-4428-b9a3-eb88d7f4f40e"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "7",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "507aa69e-2949-449c-9d4a-8723dcc6c9d1"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "41529345-83ed-4f8e-8762-f162f2c79b1a"
+                                        }
+                                      ]
+                                    },
+                                    "id": "5852d743-36ea-41de-9816-d1d3d8c01089"
+                                  }
+                                ]
+                              },
+                              "id": "e639ca37-7096-4431-bd53-c7bc96eeec89"
+                            }
+                          ]
+                        },
+                        "id": "d8bcbdfa-7037-4a67-bbfe-6b2e5b481fa6"
                       },
                       {
                         "command": "EVENT_GBVM_SCRIPT",
@@ -1112,6 +2328,13 @@
                           "script": "VM_PUSH_CONST 9\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "21e271dc-2fb1-464c-99ba-de73dca4aab3"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "ed0d28b2-442b-4ac1-aaad-c7d139a43db0"
                       }
                     ],
                     "false": []
@@ -1174,7 +2397,8 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": false,
+                    "__disableElse": true
                   },
                   "children": {
                     "true": [
@@ -1189,11 +2413,159 @@
                         "id": "01e8855d-7ada-4243-856a-e6e233dd6cee"
                       },
                       {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__label": "scoring",
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "property",
+                                    "target": "8",
+                                    "property": "frame"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false,
+                                "__label": "Slot 1 points"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "508",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "vectorY": "0",
+                                      "value": 10,
+                                      "minValue": "0",
+                                      "maxValue": "32767",
+                                      "clamp": false
+                                    },
+                                    "id": "f2aa1949-0bbe-497c-aef6-c1866a31db91"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "property",
+                                          "target": "8",
+                                          "property": "frame"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_VARIABLE_MATH",
+                                          "args": {
+                                            "vectorX": "508",
+                                            "operation": "add",
+                                            "other": "val",
+                                            "vectorY": "0",
+                                            "value": 15,
+                                            "minValue": "0",
+                                            "maxValue": "32767",
+                                            "clamp": false
+                                          },
+                                          "id": "7231f1ae-64f3-4e72-8863-27f53464fb15"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "property",
+                                                "target": "8",
+                                                "property": "frame"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            },
+                                            "__collapseElse": false,
+                                            "__disableElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Rotted 0 points"
+                                                  ],
+                                                  "__section": "text",
+                                                  "avatarId": "",
+                                                  "minHeight": 4,
+                                                  "maxHeight": 7,
+                                                  "textX": 1,
+                                                  "textY": 1,
+                                                  "textHeight": 5,
+                                                  "position": "bottom",
+                                                  "clearPrevious": true,
+                                                  "showFrame": "true",
+                                                  "speedIn": -1,
+                                                  "speedOut": -1,
+                                                  "closeWhen": "key",
+                                                  "closeButton": "a",
+                                                  "closeDelayTime": 0.5,
+                                                  "closeDelayFrames": 30
+                                                },
+                                                "id": "b72d7733-1e2d-47e1-8530-3553bce4b5ea"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "ce50c9f7-837c-48b1-9498-cfd20fc38ff6"
+                                        }
+                                      ]
+                                    },
+                                    "id": "cb87a427-7ca1-4c2c-a761-b2048844200b"
+                                  }
+                                ]
+                              },
+                              "id": "2127cb5f-794b-4839-ac2d-768b3b31f5cf"
+                            }
+                          ]
+                        },
+                        "id": "c222adaa-6f47-445a-8abe-c284e7069c7a"
+                      },
+                      {
                         "command": "EVENT_GBVM_SCRIPT",
                         "args": {
                           "script": "VM_PUSH_CONST 10\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
                         },
                         "id": "39c27b2f-bf20-43c2-a382-d976da3eae36"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "25"
+                        },
+                        "id": "92b684fd-5694-4537-bb58-1ac496ac7413"
                       }
                     ],
                     "false": []

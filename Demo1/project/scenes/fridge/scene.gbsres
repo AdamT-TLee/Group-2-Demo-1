@@ -3,7 +3,7 @@
   "id": "3ca26aef-91b6-4504-ba98-fe6a233210d7",
   "_index": 0,
   "name": "Fridge",
-  "backgroundId": "6858be02-7594-4106-9d31-760d987ed35a",
+  "backgroundId": "b189ee03-4e87-437c-9b1a-f47fca674c27",
   "tilesetId": "",
   "width": 40,
   "height": 18,
@@ -13,8 +13,8 @@
   "collisions": "002d0+",
   "autoFadeSpeed": 1,
   "symbol": "scene_1",
-  "x": 152,
-  "y": 136,
+  "x": 232,
+  "y": 152,
   "script": [
     {
       "command": "EVENT_GROUP",
@@ -209,6 +209,102 @@
       "id": "820b2956-97d8-4a66-ac7a-71eb8d925d54"
     },
     {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Gaol Default",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "3c0eafa1-457c-4edd-b872-02734e350a2c"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "f860aed4-4ef8-41dc-95d9-4dc328374d8d"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "39393649-93ae-44a4-8ff8-9f5b39fcd252"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "number",
+                "value": 0
+              },
+              "__comment": false,
+              "__collapse": false
+            },
+            "id": "59decbcc-f3e7-4423-aa97-dfd886852fc9"
+          }
+        ]
+      },
+      "id": "5da1a9d6-d720-4fbc-8c3d-8c4bd3bdd1cf"
+    },
+    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "511",
@@ -311,7 +407,16 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "9564eb85-f792-4a8b-8dcf-4ff311649969",
-        "__collapse": false
+        "__collapse": false,
+        "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
+        "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
+        "$actor[2]$": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c",
+        "$actor[3]$": "9fd00ee4-5016-46d6-af2a-1cc8a5d44e78",
+        "$actor[4]$": "0551ee6d-0b20-4345-8aa2-0ee69730d931",
+        "$actor[5]$": "faa27ba0-8e8e-444c-afb0-b086f8517745",
+        "$actor[6]$": "4a1fee2c-c169-4497-adf8-08edc4bcb93d",
+        "$actor[7]$": "bd6d3f91-836e-495d-9dc3-22fa2ffefcca",
+        "$actor[8]$": "e291f822-c8a1-46ac-ad37-584e5366294a"
       },
       "id": "9fb58487-24c8-40bf-bed0-284024a8105b"
     },
