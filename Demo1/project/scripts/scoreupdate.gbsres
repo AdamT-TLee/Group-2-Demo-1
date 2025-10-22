@@ -1,0 +1,35 @@
+{
+  "_resourceType": "script",
+  "id": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+  "name": "ScoreUpdate",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    },
+    "V1": {
+      "id": "V1",
+      "name": "Variable B",
+      "passByReference": true
+    },
+    "V2": {
+      "id": "V2",
+      "name": "Variable C",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "symbol": "script_16",
+  "script": [
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "V0",
+        "expression": "$V1$ * $V2$"
+      },
+      "id": "fb096390-b263-48e6-9639-150201dd40ba"
+    }
+  ]
+}

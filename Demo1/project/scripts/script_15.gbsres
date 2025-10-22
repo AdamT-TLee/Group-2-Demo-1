@@ -1,10 +1,10 @@
 {
   "_resourceType": "script",
-  "id": "08e5b726-bc2a-4f5c-942a-aaa5904c36ac",
-  "name": "ScoreAdd",
+  "id": "0b85aa29-9f1d-4b23-8167-b453b501b73a",
+  "name": "Script 15",
   "description": "",
   "variables": {},
   "actors": {},
-  "symbol": "script_13",
+  "symbol": "script_15",
   "script": []
 }

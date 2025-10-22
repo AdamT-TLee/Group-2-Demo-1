@@ -562,7 +562,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false,
               "__disableElse": true
             },
@@ -627,18 +627,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "95573fca-3c3e-490e-85d5-ee5087291421"
+                                    "id": "3383aedc-2540-43cd-8321-f8d5568712e6"
                                   }
                                 ],
                                 "false": [
@@ -662,18 +667,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "c74c01b6-8b94-4079-8d38-e08b02ce6a94"
+                                          "id": "07219607-5266-4a55-a1de-ceef971f0718"
                                         }
                                       ],
                                       "false": [
@@ -787,7 +797,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false,
               "__disableElse": true
             },
@@ -826,7 +836,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -851,18 +861,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "f47310c9-e637-4ea3-92b7-bd7cbe8aaa03"
+                                    "id": "cb893c2d-b903-46b1-a8df-4e9c16b5c9ce"
                                   }
                                 ],
                                 "false": [
@@ -886,18 +901,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "cca54c21-4122-4bcf-83be-66a1e6797aba"
+                                          "id": "29431a51-a36b-4a90-bc12-6adf08b038cc"
                                         }
                                       ],
                                       "false": [
@@ -1084,18 +1104,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "29f32541-4228-4e24-a48b-f42b2b1d9a89"
+                                    "id": "569dd19c-ecac-406d-8839-7f7f32c0285e"
                                   }
                                 ],
                                 "false": [
@@ -1119,18 +1144,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "548d4f32-e3ad-467d-bf25-b4ab031ad35b"
+                                          "id": "79ed2758-a24e-41f0-8383-b418e3bdb19b"
                                         }
                                       ],
                                       "false": [
@@ -1290,7 +1320,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -1315,18 +1345,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "85a4f837-f019-40fc-ae77-589c67b6842e"
+                                    "id": "81823c1f-9dd9-4d40-b51e-b3b498dc0eb9"
                                   }
                                 ],
                                 "false": [
@@ -1350,18 +1385,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "9826e75c-5883-4fc5-a247-7d7f930367e1"
+                                          "id": "d3d4c301-bbec-4e00-9101-87648657341e"
                                         }
                                       ],
                                       "false": [
@@ -1521,7 +1561,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": false
+                          "__collapse": true
                         },
                         "children": {
                           "true": [
@@ -1546,18 +1586,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "70cc5112-2757-4c4c-a951-b90d2d4c34bb"
+                                    "id": "720d3fd6-3ae2-4488-9e58-9df06229dfdd"
                                   }
                                 ],
                                 "false": [
@@ -1581,18 +1626,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "43623dab-1531-4f13-b834-a2ab48fbbe7d"
+                                          "id": "295711cd-6b52-4acf-9b63-671b535dcfa5"
                                         }
                                       ],
                                       "false": [
@@ -1733,7 +1783,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false,
+                    "__collapse": true,
                     "__disableElse": true
                   },
                   "children": {
@@ -1777,18 +1827,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "af0eca7e-bb40-4608-89d7-fce80890a843"
+                                    "id": "34874935-b72d-4c31-a2dc-e2d661a37b95"
                                   }
                                 ],
                                 "false": [
@@ -1812,18 +1867,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "3407319d-f5e5-42f1-bc3a-243899b7fe96"
+                                          "id": "d975d9cc-0e89-4e2c-908b-e4eeb6f275cd"
                                         }
                                       ],
                                       "false": [
@@ -1964,7 +2024,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": false
+                    "__collapse": true
                   },
                   "children": {
                     "true": [
@@ -2007,18 +2067,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "5e742255-0455-41b3-90eb-b41b1c8b3a30"
+                                    "id": "3af59751-c4dd-4229-a58b-12df1ce57bfd"
                                   }
                                 ],
                                 "false": [
@@ -2042,18 +2107,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "ad7b9639-689a-4c16-a546-1e4abcf10633"
+                                          "id": "c351c8a9-3066-485b-9dea-5e009e34713b"
                                         }
                                       ],
                                       "false": [
@@ -2214,7 +2284,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -2239,18 +2309,23 @@
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "307f24a6-00a6-45e8-84c6-218e6ac82151"
+                                    "id": "40280f24-8d86-409b-af6f-b1105c70e745"
                                   }
                                 ],
                                 "false": [
@@ -2274,18 +2349,23 @@
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "1b6ef334-459e-4428-b9a3-eb88d7f4f40e"
+                                          "id": "f602316b-c48d-4671-8387-467f849c7ce1"
                                         }
                                       ],
                                       "false": [
@@ -2406,7 +2486,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": false,
+              "__collapse": true,
               "__comment": false,
               "__disableElse": true
             },
@@ -2464,24 +2544,30 @@
                                     "value": 0
                                   }
                                 },
-                                "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__collapseElse": true,
+                                "__label": "Slot 1 points",
+                                "__collapse": true
                               },
                               "children": {
                                 "true": [
                                   {
-                                    "command": "EVENT_VARIABLE_MATH",
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
                                     "args": {
-                                      "vectorX": "508",
-                                      "operation": "add",
-                                      "other": "val",
-                                      "vectorY": "0",
-                                      "value": 10,
-                                      "minValue": "0",
-                                      "maxValue": "32767",
-                                      "clamp": false
+                                      "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "508"
+                                      },
+                                      "$variable[V1]$": {
+                                        "type": "number",
+                                        "value": 10
+                                      },
+                                      "$variable[V2]$": {
+                                        "type": "variable",
+                                        "value": "32"
+                                      }
                                     },
-                                    "id": "f2aa1949-0bbe-497c-aef6-c1866a31db91"
+                                    "id": "07df3859-5343-487a-b7b0-07de068e4e9b"
                                   }
                                 ],
                                 "false": [
@@ -2500,23 +2586,29 @@
                                           "value": 1
                                         }
                                       },
-                                      "__collapseElse": false
+                                      "__collapseElse": false,
+                                      "__collapse": true
                                     },
                                     "children": {
                                       "true": [
                                         {
-                                          "command": "EVENT_VARIABLE_MATH",
+                                          "command": "EVENT_CALL_CUSTOM_EVENT",
                                           "args": {
-                                            "vectorX": "508",
-                                            "operation": "add",
-                                            "other": "val",
-                                            "vectorY": "0",
-                                            "value": 15,
-                                            "minValue": "0",
-                                            "maxValue": "32767",
-                                            "clamp": false
+                                            "customEventId": "4f690036-c14a-4ee1-b379-d8d9013f8330",
+                                            "$variable[V0]$": {
+                                              "type": "variable",
+                                              "value": "508"
+                                            },
+                                            "$variable[V1]$": {
+                                              "type": "number",
+                                              "value": 15
+                                            },
+                                            "$variable[V2]$": {
+                                              "type": "variable",
+                                              "value": "32"
+                                            }
                                           },
-                                          "id": "7231f1ae-64f3-4e72-8863-27f53464fb15"
+                                          "id": "2aa3051d-87c2-486f-b2c5-88490e23b2c6"
                                         }
                                       ],
                                       "false": [
