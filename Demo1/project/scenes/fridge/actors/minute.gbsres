@@ -692,7 +692,7 @@
           "type": "variable",
           "value": "509"
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "e4112c32-1e5f-4922-bf7f-0b657a522164"
     },
@@ -712,7 +712,7 @@
           "type": "variable",
           "value": "510"
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "d7674e6d-89ad-4c90-a10e-1a9be30d27ed"
     },
@@ -732,7 +732,7 @@
           "type": "variable",
           "value": "511"
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "a5add593-3a6f-4e34-bc07-e501724019a0"
     },
@@ -874,6 +874,71 @@
         "false": []
       },
       "id": "f1848670-2fdb-4185-91d7-78baf8d4d83c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "mul",
+            "valueA": {
+              "type": "variable",
+              "value": "506"
+            },
+            "valueB": {
+              "type": "number",
+              "value": 100
+            }
+          },
+          "valueB": {
+            "type": "variable",
+            "value": "31"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "LEVEL ONE COMPLETE!\n"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "697a6930-1397-45ed-9803-8318a71573c9"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Go to shop",
+              "falseText": "Continue"
+            },
+            "id": "116e944b-8681-4bda-a230-d5bdcbde6b5d"
+          }
+        ],
+        "false": []
+      },
+      "id": "5dcb4f9a-33fd-4e5e-9c13-df77b0e58fec"
     }
   ],
   "hit1Script": [],

@@ -585,6 +585,11 @@
       "id": "80",
       "name": "updateTick",
       "symbol": "var_updatetick_0"
+    },
+    {
+      "id": "31",
+      "name": "goal1",
+      "symbol": "var_goal1"
     }
   ]
 }

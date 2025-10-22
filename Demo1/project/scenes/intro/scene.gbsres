@@ -10,7 +10,7 @@
   "type": "TOPDOWN",
   "paletteIds": [],
   "spritePaletteIds": [],
-  "collisions": "",
+  "collisions": "00168+",
   "autoFadeSpeed": 1,
   "symbol": "scene_4",
   "x": 64,
@@ -26,7 +26,8 @@
           "select"
         ],
         "override": true,
-        "__scriptTabs": "press"
+        "__scriptTabs": "press",
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -145,6 +146,17 @@
         }
       },
       "id": "7a9b4a15-5dff-4e95-a67a-6ad494b861ef"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "31",
+        "value": {
+          "type": "number",
+          "value": 100
+        }
+      },
+      "id": "db678d6d-1070-4952-a0d1-f056a31a406e"
     }
   ],
   "playerHit1Script": [],
