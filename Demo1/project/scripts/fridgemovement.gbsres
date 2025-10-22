@@ -535,7 +535,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -574,7 +574,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -594,7 +594,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -759,7 +760,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -889,7 +890,8 @@
                                               }
                                             },
                                             "__collapseElse": false,
-                                            "__disableElse": true
+                                            "__disableElse": true,
+                                            "__collapse": false
                                           },
                                           "children": {
                                             "true": [

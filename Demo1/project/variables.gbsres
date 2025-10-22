@@ -575,6 +575,16 @@
       "id": "e291f822-c8a1-46ac-ad37-584e5366294a__L5",
       "name": "delta",
       "symbol": "var_delta_8"
+    },
+    {
+      "id": "30",
+      "name": "PlaceTick",
+      "symbol": "var_placetick"
+    },
+    {
+      "id": "80",
+      "name": "updateTick",
+      "symbol": "var_updatetick_0"
     }
   ]
 }

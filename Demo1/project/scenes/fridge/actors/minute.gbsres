@@ -755,11 +755,11 @@
             "value": "23"
           },
           "valueB": {
-            "type": "number",
-            "value": 21
+            "type": "variable",
+            "value": "80"
           }
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "79431f05-56e3-4836-b0e7-3d95eab1af07"
     },
@@ -774,11 +774,11 @@
             "value": "23"
           },
           "valueB": {
-            "type": "number",
-            "value": 10
+            "type": "variable",
+            "value": "30"
           }
         },
-        "__collapse": true
+        "__collapse": false
       },
       "id": "e8fd154a-ec38-4689-a02f-af19ca0136d4"
     },

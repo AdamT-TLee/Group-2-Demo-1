@@ -3,7 +3,7 @@
   "id": "44c157a3-5eb0-439e-b77e-ee62e90a3b1d",
   "_index": 3,
   "name": "intro",
-  "backgroundId": "6b4a1d02-eaef-4786-940a-4737f089d9bc",
+  "backgroundId": "21ee0755-46a3-4069-a674-94ccb28f1a23",
   "tilesetId": "",
   "width": 20,
   "height": 18,
@@ -31,21 +31,78 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_SWITCH_SCENE",
+            "command": "EVENT_CHOICE",
             "args": {
-              "sceneId": "3ca26aef-91b6-4504-ba98-fe6a233210d7",
-              "x": {
-                "type": "number",
-                "value": 0
-              },
-              "y": {
-                "type": "number",
-                "value": 0
-              },
-              "direction": "",
-              "fadeSpeed": "2"
+              "variable": "L0",
+              "trueText": "START GAME",
+              "falseText": "HOW TO PLAY"
             },
-            "id": "7d56cbef-42bc-43f2-aca2-3dfcae612941"
+            "id": "560124af-1654-4561-8fa9-f56ac3828df0"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "true"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "3ca26aef-91b6-4504-ba98-fe6a233210d7",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "7d56cbef-42bc-43f2-aca2-3dfcae612941"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The name of the \ngame is score\npoints by clicking\non fruits,visit\nthe shop between \nrounds to upgrade \nyour build."
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "007d4790-8021-4f70-bd38-9b523d3cade6"
+                }
+              ]
+            },
+            "id": "70b3e3c7-d546-470d-a548-83453551cbbe"
           }
         ]
       },
@@ -66,6 +123,28 @@
         }
       },
       "id": "df3d6a3f-d1e2-434e-b3b7-e69d0bf50588"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "80",
+        "value": {
+          "type": "number",
+          "value": 29
+        }
+      },
+      "id": "89413691-a624-426f-8a24-b1d2d86ce4b1"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "7a9b4a15-5dff-4e95-a67a-6ad494b861ef"
     }
   ],
   "playerHit1Script": [],

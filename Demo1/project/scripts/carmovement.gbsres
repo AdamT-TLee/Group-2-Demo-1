@@ -190,7 +190,8 @@
                   "value": 0
                 }
               },
-              "__collapseElse": true
+              "__collapseElse": true,
+              "__disableElse": true
             },
             "children": {
               "true": [
@@ -198,7 +199,7 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "chosen more food\n"
+                      "+1 food variety!\n"
                     ],
                     "__section": "text",
                     "avatarId": "",
@@ -230,6 +231,111 @@
               "false": []
             },
             "id": "99bf60e8-ca38-416a-8a84-eb90010419f3"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "26"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true,
+              "__collapse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "30"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You cannot have\nfaster spawning!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "e29eb88d-b02c-41e3-bf19-3d44ec3c8950"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Food will appear\nfaster!"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "be48c05f-2efb-49c1-9b1f-e0645d74a124"
+                      },
+                      {
+                        "command": "EVENT_DEC_VALUE",
+                        "args": {
+                          "variable": "30"
+                        },
+                        "id": "270f1846-caa5-44a5-8eeb-6fd41ea6cd6f"
+                      }
+                    ]
+                  },
+                  "id": "618e79b0-f413-438b-83c2-340a9659d9f8"
+                }
+              ],
+              "false": []
+            },
+            "id": "9a862ee5-62b7-446a-a662-8bd4b436d54d"
           }
         ]
       },
