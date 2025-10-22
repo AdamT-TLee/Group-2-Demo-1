@@ -152,6 +152,21 @@
       "symbol": "var_unlockeditems"
     },
     {
+      "id": "30",
+      "name": "PlaceTick",
+      "symbol": "var_placetick"
+    },
+    {
+      "id": "31",
+      "name": "GLOBALSCORE",
+      "symbol": "var_globalscore"
+    },
+    {
+      "id": "34",
+      "name": "score",
+      "symbol": "var_score"
+    },
+    {
       "id": "41",
       "name": "randomslot",
       "symbol": "var_randomslot"
@@ -160,6 +175,11 @@
       "id": "45",
       "name": "randomItem",
       "symbol": "var_randomitem"
+    },
+    {
+      "id": "80",
+      "name": "updateTick",
+      "symbol": "var_updatetick_0"
     },
     {
       "id": "505",
@@ -577,24 +597,9 @@
       "symbol": "var_delta_8"
     },
     {
-      "id": "30",
-      "name": "PlaceTick",
-      "symbol": "var_placetick"
-    },
-    {
-      "id": "80",
-      "name": "updateTick",
-      "symbol": "var_updatetick_0"
-    },
-    {
-      "id": "31",
-      "name": "GLOBALSCORE",
-      "symbol": "var_globalscore"
-    },
-    {
-      "id": "34",
-      "name": "score",
-      "symbol": "var_score"
+      "id": "3ca26aef-91b6-4504-ba98-fe6a233210d7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
     }
   ]
 }

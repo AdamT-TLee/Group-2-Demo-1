@@ -497,6 +497,99 @@
       "id": "e72eedc7-0e3a-42af-b451-cf32df6b00c6"
     },
     {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__label": "Goal Stuff",
+        "__comment": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "variable",
+                "value": "505"
+              },
+              "__collapse": false
+            },
+            "id": "0e676cac-e305-4dc4-9efd-94f3d2f6c307"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "variable",
+                "value": "506"
+              },
+              "__collapse": false
+            },
+            "id": "e97d44d2-0c36-42a2-bca3-bfd72d21cefb"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "variable",
+                "value": "507"
+              },
+              "__collapse": false
+            },
+            "id": "f756c187-1733-4f2b-bb0c-dd324a5d99e7"
+          },
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
+              "tileIndex": {
+                "type": "variable",
+                "value": "508"
+              },
+              "__collapse": false
+            },
+            "id": "d158d83c-2d12-4281-a0bc-d3e5289afe7f"
+          }
+        ]
+      },
+      "id": "43df116e-a6d0-4d55-82f9-01e8e1d16ed6"
+    },
+    {
       "command": "EVENT_WAIT",
       "args": {
         "time": 1,
@@ -535,7 +628,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": false,
+        "__collapse": true,
         "__disableElse": true
       },
       "children": {
@@ -703,7 +796,7 @@
           "type": "variable",
           "value": "509"
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "e4112c32-1e5f-4922-bf7f-0b657a522164"
     },
@@ -723,7 +816,7 @@
           "type": "variable",
           "value": "510"
         },
-        "__collapse": false
+        "__collapse": true
       },
       "id": "d7674e6d-89ad-4c90-a10e-1a9be30d27ed"
     },

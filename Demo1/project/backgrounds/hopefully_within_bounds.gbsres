@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "Hopefully_within_bounds.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

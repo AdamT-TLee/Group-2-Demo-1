@@ -116,7 +116,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Score Default",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -211,11 +211,19 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__label": "Gaol Default",
-        "__collapse": true
+        "__label": "Goal Default",
+        "__collapse": false
       },
       "children": {
         "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "T0",
+              "expression": "$31$ / 1000"
+            },
+            "id": "909f6874-9423-45a1-8e12-6406caedb6a3"
+          },
           {
             "command": "EVENT_REPLACE_TILE_XY",
             "args": {
@@ -229,13 +237,21 @@
               },
               "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
               "tileIndex": {
-                "type": "number",
-                "value": 0
+                "type": "variable",
+                "value": "T0"
               },
               "__comment": false,
               "__collapse": false
             },
             "id": "3c0eafa1-457c-4edd-b872-02734e350a2c"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH_EVALUATE",
+            "args": {
+              "variable": "T0",
+              "expression": "$31$ / 100"
+            },
+            "id": "cb04d479-9af2-4c55-8fee-5f3d1e7ad9d8"
           },
           {
             "command": "EVENT_REPLACE_TILE_XY",
@@ -250,8 +266,8 @@
               },
               "tilesetId": "dab7bb1d-7cba-47d9-8346-300c85a4c78a",
               "tileIndex": {
-                "type": "number",
-                "value": 0
+                "type": "variable",
+                "value": "T0"
               },
               "__comment": false,
               "__collapse": false
@@ -695,7 +711,7 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "6bb5006b-2113-4ec9-a03c-0c0844c52d19",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "df1175be-ca8c-4f39-808e-146634068e61"
     },
