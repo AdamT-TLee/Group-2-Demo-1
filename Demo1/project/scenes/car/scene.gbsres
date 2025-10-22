@@ -13,8 +13,8 @@
   "collisions": "",
   "autoFadeSpeed": 1,
   "symbol": "scene_2",
-  "x": 561.2352105604101,
-  "y": 111.35417958625143,
+  "x": 616,
+  "y": 152,
   "script": [
     {
       "command": "EVENT_ACTOR_SET_POSITION",
