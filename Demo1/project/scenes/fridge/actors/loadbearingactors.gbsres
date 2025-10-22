@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "9774d21d-9bad-4bc4-a943-6c5b08e89475",
-  "name": "minute",
+  "name": "loadbearingactors",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "85d559bd-f10d-4b2f-b2e6-58e508134112",
