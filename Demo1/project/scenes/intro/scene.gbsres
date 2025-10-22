@@ -3,7 +3,7 @@
   "id": "44c157a3-5eb0-439e-b77e-ee62e90a3b1d",
   "_index": 3,
   "name": "intro",
-  "backgroundId": "21ee0755-46a3-4069-a674-94ccb28f1a23",
+  "backgroundId": "b0d11c81-9ca8-4844-bde0-c87e93efa08f",
   "tilesetId": "",
   "width": 20,
   "height": 18,
@@ -16,6 +16,13 @@
   "x": 64,
   "y": 152,
   "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "8eba7d28-f272-4ab0-8c21-03d8a09bcb06"
+    },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
       "args": {
