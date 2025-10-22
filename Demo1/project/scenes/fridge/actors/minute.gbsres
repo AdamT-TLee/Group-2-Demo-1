@@ -29,6 +29,17 @@
       "command": "EVENT_RNG_SEED",
       "args": {},
       "id": "e14be9f6-13c7-446a-b636-2bc53cd55bde"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "34",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "aee2356a-ef90-46f4-a05b-addbd86ddab2"
     }
   ],
   "updateScript": [
@@ -524,7 +535,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true,
+        "__collapse": false,
         "__disableElse": true
       },
       "children": {
@@ -876,20 +887,40 @@
       "id": "f1848670-2fdb-4185-91d7-78baf8d4d83c"
     },
     {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "900cecff-5700-4aa8-9221-4a0281b974da",
+        "$variable[V0]$": {
+          "type": "variable",
+          "value": "34"
+        },
+        "$variable[V1]$": {
+          "type": "variable",
+          "value": "508"
+        },
+        "$variable[V2]$": {
+          "type": "variable",
+          "value": "507"
+        },
+        "$variable[V3]$": {
+          "type": "variable",
+          "value": "506"
+        },
+        "$variable[V4]$": {
+          "type": "variable",
+          "value": "505"
+        }
+      },
+      "id": "7326f8a1-8322-46a0-9142-26b1092b3fa5"
+    },
+    {
       "command": "EVENT_IF",
       "args": {
         "condition": {
           "type": "gte",
           "valueA": {
-            "type": "mul",
-            "valueA": {
-              "type": "variable",
-              "value": "506"
-            },
-            "valueB": {
-              "type": "number",
-              "value": 100
-            }
+            "type": "variable",
+            "value": "34"
           },
           "valueB": {
             "type": "variable",
@@ -905,7 +936,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "LEVEL ONE COMPLETE!\n"
+                "LEVEL COMPLETE!\n"
               ],
               "__section": "text",
               "avatarId": "",
@@ -931,9 +962,66 @@
             "args": {
               "variable": "L0",
               "trueText": "Go to shop",
-              "falseText": "Continue"
+              "falseText": "keep playing"
             },
             "id": "116e944b-8681-4bda-a230-d5bdcbde6b5d"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "true"
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "2f60db18-b001-416d-abc3-e3a192d31a6f",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "a13fe5ea-8f88-4bb6-b1ae-ea77d6f78d22"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "3ca26aef-91b6-4504-ba98-fe6a233210d7",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "31daf590-c9a2-4cc0-9ae2-da0fd1274db1"
+                }
+              ]
+            },
+            "id": "8cb19bdf-4c72-489e-99ac-76efc085bdfd"
           }
         ],
         "false": []

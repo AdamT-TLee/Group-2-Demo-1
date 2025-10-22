@@ -212,7 +212,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Gaol Default",
-        "__collapse": false
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -407,7 +407,7 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "9564eb85-f792-4a8b-8dcf-4ff311649969",
-        "__collapse": false,
+        "__collapse": true,
         "$actor[0]$": "c645685a-9112-43b7-8373-5b6be7bff45f",
         "$actor[1]$": "c39c63c4-bc6d-4dd4-8962-62292c5db4f0",
         "$actor[2]$": "89ef6dcf-99ea-4b8c-a255-90598b9d4a4c",

@@ -312,7 +312,8 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -508,7 +509,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "$505$\n$506$\n$507$"
+                "$34$"
               ],
               "__section": "text",
               "avatarId": "",
@@ -525,9 +526,10 @@
               "closeWhen": "key",
               "closeButton": "a",
               "closeDelayTime": 0.5,
-              "closeDelayFrames": 30
+              "closeDelayFrames": 30,
+              "__comment": true
             },
-            "id": "0587465e-883e-42a9-a997-ff7616cd6cab"
+            "id": "b06d3a85-f320-4fd9-851c-98ea90d259a2"
           },
           {
             "command": "EVENT_IF",

@@ -588,8 +588,13 @@
     },
     {
       "id": "31",
-      "name": "goal1",
-      "symbol": "var_goal1"
+      "name": "GLOBALSCORE",
+      "symbol": "var_globalscore"
+    },
+    {
+      "id": "34",
+      "name": "score",
+      "symbol": "var_score"
     }
   ]
 }
