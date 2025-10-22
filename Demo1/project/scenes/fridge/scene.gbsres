@@ -116,7 +116,7 @@
       "command": "EVENT_GROUP",
       "args": {
         "__label": "Score Default",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -695,7 +695,7 @@
       "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
         "customEventId": "6bb5006b-2113-4ec9-a03c-0c0844c52d19",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "df1175be-ca8c-4f39-808e-146634068e61"
     },

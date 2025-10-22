@@ -96,6 +96,50 @@
         }
       },
       "id": "b587f694-e0f7-4526-a558-2df05c521092"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "508",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "56fd2e1e-9278-4d82-afe4-a0dec3296f31"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "507",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5c85f00b-79dc-4b24-914c-5f9f0db5a091"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "506",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "77f5e344-21ee-441d-ba15-f261902fad56"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "505",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "cd3044c1-2f16-44bb-8307-1ae9dae1732c"
     }
   ]
 }
