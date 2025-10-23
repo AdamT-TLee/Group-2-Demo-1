@@ -34,7 +34,7 @@
         ],
         "override": true,
         "__scriptTabs": "press",
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -87,15 +87,17 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "The name of the \ngame is score\npoints by clicking\non fruits,visit\nthe shop between \nrounds to upgrade \nyour build."
+                      "The name of the \ngame is score\npoints by clicking\non fruits",
+                      "Visit the shop \nbetween rounds to \nupgrade your build",
+                      "If your fridge\nbecomes full or\nyou run out of \ntime you lose"
                     ],
                     "__section": "text",
                     "avatarId": "",
                     "minHeight": 4,
-                    "maxHeight": 7,
+                    "maxHeight": 15,
                     "textX": 1,
                     "textY": 1,
-                    "textHeight": 5,
+                    "textHeight": 10,
                     "position": "bottom",
                     "clearPrevious": true,
                     "showFrame": "true",
@@ -138,7 +140,7 @@
         "variable": "80",
         "value": {
           "type": "number",
-          "value": 29
+          "value": 7
         }
       },
       "id": "89413691-a624-426f-8a24-b1d2d86ce4b1"
@@ -149,7 +151,7 @@
         "variable": "30",
         "value": {
           "type": "number",
-          "value": 1
+          "value": 3
         }
       },
       "id": "7a9b4a15-5dff-4e95-a67a-6ad494b861ef"
@@ -171,10 +173,32 @@
         "variable": "32",
         "value": {
           "type": "number",
-          "value": 2
+          "value": 1
         }
       },
       "id": "35258c1c-29d7-4922-a7f9-b8e41ece3545"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "39",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "90dc5905-dfbc-4487-9167-e4ee7b3ff0a9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "33",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "7b5fe2ff-875a-45d6-a260-71df02888d2a"
     }
   ],
   "playerHit1Script": [],

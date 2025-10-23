@@ -4,44 +4,7 @@
   "name": "fridgeMovement",
   "description": "",
   "variables": {},
-  "actors": {
-    "0": {
-      "id": "0",
-      "name": "Actor A"
-    },
-    "1": {
-      "id": "1",
-      "name": "Actor B"
-    },
-    "2": {
-      "id": "2",
-      "name": "Actor C"
-    },
-    "3": {
-      "id": "3",
-      "name": "Actor D"
-    },
-    "4": {
-      "id": "4",
-      "name": "Actor E"
-    },
-    "5": {
-      "id": "5",
-      "name": "Actor F"
-    },
-    "6": {
-      "id": "6",
-      "name": "Actor G"
-    },
-    "7": {
-      "id": "7",
-      "name": "Actor H"
-    },
-    "8": {
-      "id": "8",
-      "name": "Actor I"
-    }
-  },
+  "actors": {},
   "symbol": "script_12",
   "script": [
     {
@@ -527,7 +490,8 @@
               "closeButton": "a",
               "closeDelayTime": 0.5,
               "closeDelayFrames": 30,
-              "__comment": true
+              "__comment": true,
+              "__collapse": true
             },
             "id": "b06d3a85-f320-4fd9-851c-98ea90d259a2"
           },
@@ -562,7 +526,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -611,9 +575,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "0",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "134"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -653,9 +616,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "0",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "134"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -681,7 +643,8 @@
                                             "$variable[V2]$": {
                                               "type": "variable",
                                               "value": "32"
-                                            }
+                                            },
+                                            "__collapse": false
                                           },
                                           "id": "07219607-5266-4a55-a1de-ceef971f0718"
                                         }
@@ -693,9 +656,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "0",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "134"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -731,6 +693,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "3a1277c8-95f3-4b31-8a1c-dfd46d8d98af"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "43",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "b6d01ab3-4a70-45bd-a40f-4ceefeae813c"
                                               }
                                             ],
                                             "false": []
@@ -750,11 +722,45 @@
                         "id": "608bbbde-4894-42f6-b7d7-4959e52d5395"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 1\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "134",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "69003e01-f248-4e43-bf90-50d77b147230"
+                        "id": "0bf56234-5ce9-4700-afca-7f3c2e6c337a"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "43"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 1\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "69003e01-f248-4e43-bf90-50d77b147230"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "7f517490-b95e-4ba6-bc0b-f51bbe00455f"
                       }
                     ],
                     "false": []
@@ -797,7 +803,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -846,9 +852,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "1",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "135"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -856,7 +861,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -877,7 +883,7 @@
                                         "value": "32"
                                       }
                                     },
-                                    "id": "cb893c2d-b903-46b1-a8df-4e9c16b5c9ce"
+                                    "id": "2c727f24-ae09-4cf9-a98d-e67642b69927"
                                   }
                                 ],
                                 "false": [
@@ -887,9 +893,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "1",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "135"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -915,7 +920,8 @@
                                             "$variable[V2]$": {
                                               "type": "variable",
                                               "value": "32"
-                                            }
+                                            },
+                                            "__collapse": false
                                           },
                                           "id": "29431a51-a36b-4a90-bc12-6adf08b038cc"
                                         }
@@ -927,9 +933,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "1",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "135"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -966,6 +971,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "a4121ef0-4210-444b-bae7-9ba0a4f9deb4"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "61",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "ad8dce56-29b4-477c-82db-7a5ff8a20ddb"
                                               }
                                             ],
                                             "false": []
@@ -985,12 +1000,45 @@
                         "id": "ce62b309-711b-41c3-8cff-3be0d5b4befd"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 3\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1",
-                          "__collapse": false
+                          "variable": "135",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "86f603fd-c540-4992-8d20-9bff5683b1dd"
+                        "id": "c6959c03-44de-4d56-877f-ad7310c1cf07"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "61"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 3\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "296ad026-a28d-4aeb-9765-4498aea1822d"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "ec8c213f-4aae-49d6-9c4d-b4169e0328a5"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -1040,7 +1088,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -1089,9 +1137,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "2",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "48"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -1099,7 +1146,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -1130,9 +1178,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "2",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "48"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -1170,9 +1217,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "2",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "48"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -1208,6 +1254,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "b4ebbb2b-2d2b-4b16-9067-8c1a1d19e332"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "82",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "1f686faa-da6d-4b82-a4b8-1f056ca40228"
                                               }
                                             ],
                                             "false": []
@@ -1227,11 +1283,45 @@
                         "id": "ce635927-2e7a-4f79-b044-4ae90569333a"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 4\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "48",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "3ee0de0b-b5c8-4c2a-afa5-ec174b4271a6"
+                        "id": "d5e8912a-e77b-41e2-9bdb-8f2cdd318e48"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "82"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 4\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "4e4d14c8-b294-4202-a57f-4273430eaa82"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "45a26991-41fb-4218-9ea1-39ec07e0b7df"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -1281,7 +1371,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -1301,7 +1391,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true,
+                    "__collapse": false,
                     "__disableElse": true
                   },
                   "children": {
@@ -1320,7 +1410,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -1330,9 +1420,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "3",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "60"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -1340,7 +1429,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -1371,9 +1461,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "3",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "60"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -1411,9 +1500,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "2",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "60"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -1449,6 +1537,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "0e27b6ba-adf4-40d1-b7ca-7383518d6266"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "105",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "4708e073-8ed7-40f3-adae-1471f1fcb71d"
                                               }
                                             ],
                                             "false": []
@@ -1468,11 +1566,45 @@
                         "id": "c602fbe2-adc0-41f7-bfb6-17cfb1f96e94"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 5\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "60",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "c710f4f5-45e9-419f-926b-fc5a11712f32"
+                        "id": "a181ee9a-d162-4858-949a-b55c1811efa8"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "105"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 5\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "510d9d23-b3c7-4df5-92fa-296947a06458"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "669bd94c-5589-4074-832f-29ce63f34a0e"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -1522,7 +1654,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -1542,7 +1674,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true,
+                    "__collapse": false,
                     "__disableElse": true
                   },
                   "children": {
@@ -1553,7 +1685,8 @@
                           "variable": "9",
                           "value": {
                             "type": "false"
-                          }
+                          },
+                          "__collapse": true
                         },
                         "id": "f77d4bf9-b95a-4963-99d9-4bafcb8521d6"
                       },
@@ -1561,7 +1694,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -1571,9 +1704,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "4",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "37"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -1581,7 +1713,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -1612,9 +1745,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "4",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "37"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -1652,9 +1784,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "4",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "37"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -1690,6 +1821,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "ea2fbd00-6408-4e37-9484-81b1792d42d1"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "83",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "bac55f61-0b09-4cec-b928-1b9d18bf9612"
                                               }
                                             ],
                                             "false": []
@@ -1709,11 +1850,45 @@
                         "id": "6e6dc1ff-7d8a-4364-8c44-8c109b98bf06"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 6\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "37",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "3edfb777-aefc-4fb3-9af6-c04f9350232b"
+                        "id": "2092c654-1eeb-4617-b019-c5f51c77e9cb"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "83"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 6\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "3cfff87d-6809-48d0-9d45-27559a14b59f"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "4626b5f9-61c8-4384-b132-ddcbf9c949f5"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -1763,7 +1938,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -1783,7 +1958,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true,
+                    "__collapse": false,
                     "__disableElse": true
                   },
                   "children": {
@@ -1794,7 +1969,8 @@
                           "variable": "10",
                           "value": {
                             "type": "false"
-                          }
+                          },
+                          "__collapse": true
                         },
                         "id": "35890fd3-8220-4b5c-8ec7-59c05aa8cdc2"
                       },
@@ -1812,9 +1988,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "5",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "50"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -1822,7 +1997,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -1853,9 +2029,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "3",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "50"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -1893,9 +2068,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "5",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "50"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -1931,6 +2105,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "e30c3a0e-5436-4967-b8f9-ffbc44b1be9d"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "90",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "1ae5af7c-0ced-419c-a37e-15433f01321f"
                                               }
                                             ],
                                             "false": []
@@ -1950,11 +2134,45 @@
                         "id": "f3514c7e-056f-47d5-a238-fda3980e8dec"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 7\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "50",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "cd54879a-5633-4365-9cdc-37671d1e0782"
+                        "id": "ff531c59-2079-4a5b-ac7c-6258cd2419a2"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "90"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 7\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "ddc9555f-1785-4a53-bb2f-e55b2326fac0"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "9d9a30bd-9dd8-486e-8b5e-cfaf1cc9756f"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -2004,7 +2222,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -2024,7 +2242,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -2042,7 +2260,7 @@
                         "command": "EVENT_GROUP",
                         "args": {
                           "__label": "scoring",
-                          "__collapse": true
+                          "__collapse": false
                         },
                         "children": {
                           "true": [
@@ -2052,9 +2270,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "6",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "52"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -2062,7 +2279,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -2093,16 +2311,16 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "6",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "52"
                                         },
                                         "valueB": {
                                           "type": "number",
                                           "value": 1
                                         }
                                       },
-                                      "__collapseElse": false
+                                      "__collapseElse": false,
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -2133,9 +2351,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "6",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "52"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -2171,6 +2388,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "41927062-3377-4b38-8ec7-2064e8cecb41"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "51",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "968d1e89-c3e8-4430-a719-7d91f456f26f"
                                               }
                                             ],
                                             "false": []
@@ -2190,11 +2417,45 @@
                         "id": "8dcdd3f8-758b-45fc-bdbc-b84631ba508f"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_IF",
                         "args": {
-                          "script": "VM_PUSH_CONST 8\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "51"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
                         },
-                        "id": "45795cad-6ac5-40d6-81f1-56f5f48b2a8e"
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 8\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "3f340fae-d337-424f-bfcc-811c5a6afd21"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "c4302ea9-89d7-4fd2-a0d0-a80e60cab22f"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "52",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "aa81421c-a21d-48c2-aa36-9475c9232fe8"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -2244,7 +2505,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -2264,7 +2525,7 @@
                       }
                     },
                     "__collapseElse": true,
-                    "__collapse": true,
+                    "__collapse": false,
                     "__disableElse": true
                   },
                   "children": {
@@ -2294,9 +2555,8 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "7",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "46"
                                   },
                                   "valueB": {
                                     "type": "number",
@@ -2304,7 +2564,8 @@
                                   }
                                 },
                                 "__collapseElse": false,
-                                "__label": "Slot 1 points"
+                                "__label": "Slot 1 points",
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -2335,9 +2596,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "7",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "46"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -2375,9 +2635,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "7",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "46"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -2413,6 +2672,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "507aa69e-2949-449c-9d4a-8723dcc6c9d1"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "87",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "71ac3cdc-4346-41f3-bdf3-11a354c4f727"
                                               }
                                             ],
                                             "false": []
@@ -2432,11 +2701,45 @@
                         "id": "d8bcbdfa-7037-4a67-bbfe-6b2e5b481fa6"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 9\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "46",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "21e271dc-2fb1-464c-99ba-de73dca4aab3"
+                        "id": "2dc9be52-9b46-4b38-9811-d74869e86ced"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "87"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 9\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "b082101a-6829-4e59-bc0e-8ffa92d004c5"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "ac07aa88-612c-4001-84c0-8b501fde9227"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",
@@ -2486,7 +2789,7 @@
                 }
               },
               "__collapseElse": true,
-              "__collapse": true,
+              "__collapse": false,
               "__comment": false,
               "__disableElse": true
             },
@@ -2535,18 +2838,17 @@
                                 "condition": {
                                   "type": "eq",
                                   "valueA": {
-                                    "type": "property",
-                                    "target": "8",
-                                    "property": "frame"
+                                    "type": "variable",
+                                    "value": "58"
                                   },
                                   "valueB": {
                                     "type": "number",
                                     "value": 0
                                   }
                                 },
-                                "__collapseElse": true,
+                                "__collapseElse": false,
                                 "__label": "Slot 1 points",
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -2577,9 +2879,8 @@
                                       "condition": {
                                         "type": "eq",
                                         "valueA": {
-                                          "type": "property",
-                                          "target": "8",
-                                          "property": "frame"
+                                          "type": "variable",
+                                          "value": "58"
                                         },
                                         "valueB": {
                                           "type": "number",
@@ -2587,7 +2888,7 @@
                                         }
                                       },
                                       "__collapseElse": false,
-                                      "__collapse": true
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -2618,9 +2919,8 @@
                                             "condition": {
                                               "type": "eq",
                                               "valueA": {
-                                                "type": "property",
-                                                "target": "8",
-                                                "property": "frame"
+                                                "type": "variable",
+                                                "value": "58"
                                               },
                                               "valueB": {
                                                 "type": "number",
@@ -2656,6 +2956,16 @@
                                                   "closeDelayFrames": 30
                                                 },
                                                 "id": "b72d7733-1e2d-47e1-8530-3553bce4b5ea"
+                                              },
+                                              {
+                                                "command": "EVENT_SET_VALUE",
+                                                "args": {
+                                                  "variable": "89",
+                                                  "value": {
+                                                    "type": "true"
+                                                  }
+                                                },
+                                                "id": "18c537e1-0551-4bde-9abe-bc09219cd15c"
                                               }
                                             ],
                                             "false": []
@@ -2675,11 +2985,45 @@
                         "id": "c222adaa-6f47-445a-8abe-c284e7069c7a"
                       },
                       {
-                        "command": "EVENT_GBVM_SCRIPT",
+                        "command": "EVENT_SET_VALUE",
                         "args": {
-                          "script": "VM_PUSH_CONST 10\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                          "variable": "58",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
                         },
-                        "id": "39c27b2f-bf20-43c2-a382-d976da3eae36"
+                        "id": "8732c902-8aa5-4f4b-9bb9-c26017516220"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "89"
+                            },
+                            "valueB": {
+                              "type": "false"
+                            }
+                          },
+                          "__collapseElse": true,
+                          "__disableElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GBVM_SCRIPT",
+                              "args": {
+                                "script": "VM_PUSH_CONST 10\nVM_ACTOR_DEACTIVATE .ARG0\nVM_POP 1"
+                              },
+                              "id": "b387bfbf-7431-4719-b08a-85289a865e4d"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "f0b179a0-634e-4584-929d-88eea645f245"
                       },
                       {
                         "command": "EVENT_DEC_VALUE",

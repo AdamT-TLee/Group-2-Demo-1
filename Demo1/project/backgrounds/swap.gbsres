@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "a1658f8c-558e-40cc-8d5e-eb74fd1ff5f0",
+  "name": "swap",
+  "symbol": "bg_swap",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "swap.png",
+  "tileColors": ""
+}

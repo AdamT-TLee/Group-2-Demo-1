@@ -48,6 +48,16 @@
         "customEventId": "5b981248-4820-4b9b-a240-b81ecd1abea5"
       },
       "id": "292ffe8f-150f-4def-a6b6-44b634678ef0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "38",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "368dde78-a03b-40a6-bcc6-8bf599543e45"
     }
   ],
   "playerHit1Script": [],

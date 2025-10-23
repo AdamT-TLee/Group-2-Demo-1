@@ -162,6 +162,11 @@
       "symbol": "var_globalscore"
     },
     {
+      "id": "32",
+      "name": "ScoreMult",
+      "symbol": "var_scoremult"
+    },
+    {
       "id": "34",
       "name": "score",
       "symbol": "var_score"
@@ -602,9 +607,124 @@
       "symbol": "var_local_0"
     },
     {
-      "id": "32",
-      "name": "ScoreMult",
-      "symbol": "var_scoremult"
+      "id": "38",
+      "name": "ChosenItem",
+      "symbol": "var_chosenitem"
+    },
+    {
+      "id": "39",
+      "name": "recursiveCount",
+      "symbol": "var_recursivecount"
+    },
+    {
+      "id": "33",
+      "name": "levelCount",
+      "symbol": "var_levelcount"
+    },
+    {
+      "id": "35",
+      "name": "frame",
+      "symbol": "var_frame"
+    },
+    {
+      "id": "134",
+      "name": "frame1",
+      "symbol": "var_frame1"
+    },
+    {
+      "id": "135",
+      "name": "frame2",
+      "symbol": "var_frame2"
+    },
+    {
+      "id": "48",
+      "name": "frame3",
+      "symbol": "var_frame3"
+    },
+    {
+      "id": "60",
+      "name": "frame4",
+      "symbol": "var_frame4"
+    },
+    {
+      "id": "37",
+      "name": "frame5",
+      "symbol": "var_frame5"
+    },
+    {
+      "id": "50",
+      "name": "frame6",
+      "symbol": "var_frame6"
+    },
+    {
+      "id": "52",
+      "name": "frame7",
+      "symbol": "var_frame7"
+    },
+    {
+      "id": "46",
+      "name": "frame8",
+      "symbol": "var_frame8"
+    },
+    {
+      "id": "58",
+      "name": "frame9",
+      "symbol": "var_frame9"
+    },
+    {
+      "id": "55",
+      "name": "frame8",
+      "symbol": "var_frame8_0"
+    },
+    {
+      "id": "43",
+      "name": "Rotten1",
+      "symbol": "var_rotten1"
+    },
+    {
+      "id": "61",
+      "name": "Rotten2",
+      "symbol": "var_rotten2"
+    },
+    {
+      "id": "82",
+      "name": "Rotten3",
+      "symbol": "var_rotten3"
+    },
+    {
+      "id": "105",
+      "name": "Rotten4",
+      "symbol": "var_rotten4"
+    },
+    {
+      "id": "83",
+      "name": "Rotten5",
+      "symbol": "var_rotten5"
+    },
+    {
+      "id": "90",
+      "name": "Rotten6",
+      "symbol": "var_rotten6"
+    },
+    {
+      "id": "87",
+      "name": "Rotten8",
+      "symbol": "var_rotten8"
+    },
+    {
+      "id": "89",
+      "name": "Rotten9",
+      "symbol": "var_rotten9"
+    },
+    {
+      "id": "51",
+      "name": "Rotten7",
+      "symbol": "var_rotten7"
+    },
+    {
+      "id": "64",
+      "name": "difference",
+      "symbol": "var_difference_0"
     }
   ]
 }

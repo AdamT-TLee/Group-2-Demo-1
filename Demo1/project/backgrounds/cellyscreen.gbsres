@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "0f5bdd30-3c2a-4ac4-b0d5-b06dfd5cf6f0",
+  "name": "cellyScreen",
+  "symbol": "bg_cellyscreen",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "cellyScreen.png",
+  "tileColors": ""
+}

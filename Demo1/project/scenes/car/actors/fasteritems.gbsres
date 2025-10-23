@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "3902245a-caa8-4c89-acc8-3f33eea48ebe",
-  "name": "",
+  "name": "FasterItems",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "e6453453-9d04-441e-8cb5-d54dea178bd8",
@@ -23,5 +23,5 @@
   "hit3Script": [],
   "x": 8,
   "y": 10,
-  "_index": 1
+  "_index": 2
 }

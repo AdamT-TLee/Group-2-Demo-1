@@ -140,6 +140,97 @@
         }
       },
       "id": "cd3044c1-2f16-44bb-8307-1ae9dae1732c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "43",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f0f66157-96f3-491a-a682-7c7e04a3e0d4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "61",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "0d811fac-2165-4bb7-81ab-2091ec5a80aa"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "82",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "db7745e6-3b94-4a99-9df7-e89827b4a680"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "105",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "e285e3f2-122d-40de-9b3c-a8eb4a792efe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "83",
+        "value": {
+          "type": "false"
+        },
+        "__collapse": false
+      },
+      "id": "ad9fbd4f-99ce-4538-98ae-3409650d5199"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "90",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "69be2819-f60a-4aeb-bba1-c03108b04f1a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "51",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "68463b09-449c-4b39-a4f2-3d3b39185405"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "87",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f3144e45-acad-4836-ab2c-0371ce525cda"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "89",
+        "value": {
+          "type": "false"
+        }
+      },
+      "id": "f57bf23f-9164-4264-8d55-06f2ff3e0780"
     }
   ]
 }
